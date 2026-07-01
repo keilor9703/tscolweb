@@ -11,18 +11,21 @@ import {
   Triangle,
   Cpu,
 } from "lucide-react";
-import { site } from "@/lib/site";
 
 const EASE = [0.16, 1, 0.3, 1] as const;
 
 /**
- * Glassmorphism "trust" hero — recreated from the 21st.dev reference,
- * localized and re-themed to the brand palette.
+ * Glassmorphism "trust" hero — WARM variant, faithful to the 21st.dev reference:
+ * deep-green base, amber "doorway" glow, backlit standing figure, glass cards.
  *
- * The ambient glow color is driven by the CSS var --hero-glow below.
- * - Indigo (default, coheres with the rest of the page):  245 62% 58%
- * - Warm amber (faithful to the reference screenshot):     38 92% 55%
- *   (and switch --hero-base to a deep green: 160 30% 8%)
+ * All accent colors flow from the CSS vars set on <section>. To go back to the
+ * indigo/cool variant, use:
+ *   --hero-glow: 245 62% 58%; --hero-base: 232 44% 4%;
+ *   --brand: 245 62% 60%; --brand-2: 262 83% 64%; --brand-3: 190 92% 56%;
+ *
+ * The figure is an inline SVG (no external image, always renders). To use a real
+ * backlit photo instead, drop an <img> into the .hero-figure wrapper and remove
+ * the <FigureSilhouette/>.
  */
 
 const fadeUp = {
@@ -41,40 +44,44 @@ export function HeroGlass() {
       className="relative flex min-h-screen items-center overflow-hidden py-28"
       style={
         {
-          // Theme knobs — change these two lines to flip the mood
-          ["--hero-glow" as string]: "245 62% 58%", // amber alt: 38 92% 55%
-          ["--hero-base" as string]: "232 44% 4%", // green alt: 160 30% 7%
-          background: "hsl(var(--hero-base))",
+          // Warm theme knobs (amber on deep green)
+          ["--hero-glow" as string]: "32 96% 55%",
+          ["--hero-base" as string]: "158 34% 6%",
+          ["--brand" as string]: "35 94% 56%",
+          ["--brand-2" as string]: "22 92% 55%",
+          ["--brand-3" as string]: "45 96% 62%",
+          background:
+            "radial-gradient(120% 90% at 50% 10%, hsl(158 30% 9%), hsl(var(--hero-base)) 60%)",
         } as React.CSSProperties
       }
     >
-      {/* Ambient scenography: warm/indigo spotlight glow + silhouette floor */}
+      {/* Ambient scenography */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
+        {/* Doorway light column behind the figure */}
         <div
-          className="absolute left-1/2 top-1/2 h-[46rem] w-[46rem] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[90px]"
+          className="absolute left-1/2 top-[6%] h-[78%] w-[30rem] -translate-x-1/2 blur-[60px]"
           style={{
             background:
-              "radial-gradient(circle, hsl(var(--hero-glow) / 0.55), hsl(var(--hero-glow) / 0.12) 45%, transparent 70%)",
+              "radial-gradient(60% 70% at 50% 45%, hsl(var(--hero-glow) / 0.85), hsl(var(--hero-glow) / 0.25) 55%, transparent 75%)",
           }}
         />
+        {/* Warm core bloom */}
         <div
-          className="absolute left-[46%] top-[42%] h-[24rem] w-[24rem] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[70px]"
+          className="absolute left-1/2 top-1/2 h-[34rem] w-[34rem] -translate-x-1/2 -translate-y-1/2 rounded-full blur-[90px]"
           style={{
             background:
-              "radial-gradient(circle, hsl(var(--hero-glow) / 0.5), transparent 65%)",
+              "radial-gradient(circle, hsl(38 100% 62% / 0.5), hsl(var(--hero-glow) / 0.15) 50%, transparent 72%)",
           }}
         />
-        {/* Soft central figure suggestion */}
-        <div
-          className="absolute bottom-0 left-1/2 h-[60%] w-[30%] -translate-x-1/2 blur-2xl"
-          style={{
-            background:
-              "radial-gradient(ellipse at 50% 100%, hsl(var(--hero-base)) 20%, transparent 70%)",
-          }}
-        />
-        {/* Bottom vignette → fades into the next section */}
-        <div className="absolute inset-x-0 bottom-0 h-64 bg-gradient-to-t from-background to-transparent" />
-        <div className="bg-grid mask-fade-b absolute inset-0 opacity-40" />
+
+        {/* Backlit standing figure */}
+        <div className="hero-figure absolute bottom-0 left-1/2 hidden h-[68%] -translate-x-1/2 sm:block">
+          <FigureSilhouette />
+        </div>
+
+        {/* Floor fade + bottom vignette into next section */}
+        <div className="absolute inset-x-0 bottom-0 h-72 bg-gradient-to-t from-background via-background/70 to-transparent" />
+        <div className="bg-grid mask-fade-b absolute inset-0 opacity-25" />
       </div>
 
       <div className="container relative z-10">
@@ -135,7 +142,7 @@ export function HeroGlass() {
                 className="group inline-flex items-center justify-center gap-2.5 rounded-full border border-white/10 bg-white/5 px-7 py-3.5 text-base font-medium text-foreground backdrop-blur transition-colors duration-300 hover:bg-white/10"
               >
                 <span className="grid h-6 w-6 place-items-center rounded-full bg-[hsl(var(--brand))]">
-                  <Play className="h-3 w-3 translate-x-[1px] fill-white text-white" />
+                  <Play className="h-3 w-3 translate-x-[1px] fill-black text-black" />
                 </span>
                 Ver showreel
               </a>
@@ -158,12 +165,43 @@ export function HeroGlass() {
   );
 }
 
+/** Backlit standing figure: dark silhouette with a warm rim glow. */
+function FigureSilhouette() {
+  return (
+    <svg
+      viewBox="0 0 200 420"
+      className="h-full w-auto"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <defs>
+        <filter id="rim" x="-40%" y="-40%" width="180%" height="180%">
+          <feGaussianBlur stdDeviation="6" />
+        </filter>
+      </defs>
+      {/* Warm rim (behind, blurred) */}
+      <g filter="url(#rim)" opacity="0.9">
+        <circle cx="100" cy="56" r="25" fill="hsl(38 100% 65%)" />
+        <path
+          d="M100,78 C84,78 74,90 74,107 L67,407 Q100,418 133,407 L126,107 C126,90 116,78 100,78 Z"
+          fill="hsl(35 96% 60%)"
+        />
+      </g>
+      {/* Dark body on top */}
+      <circle cx="100" cy="57" r="22" fill="hsl(158 42% 3%)" />
+      <path
+        d="M100,80 C87,80 78,91 78,107 L72,405 Q100,415 128,405 L122,107 C122,91 113,80 100,80 Z"
+        fill="hsl(158 42% 3%)"
+      />
+    </svg>
+  );
+}
+
 function StatsCard() {
   return (
     <div className="glass relative overflow-hidden rounded-[1.75rem] p-7 shadow-[0_40px_120px_-40px_rgba(0,0,0,0.8)]">
       <div className="mb-6 flex items-center gap-4">
         <div className="grid h-12 w-12 place-items-center rounded-2xl border border-white/10 bg-white/5">
-          <Target className="h-6 w-6 text-[hsl(var(--brand-2))]" />
+          <Target className="h-6 w-6 text-[hsl(var(--brand))]" />
         </div>
         <div>
           <div className="font-heading text-3xl font-semibold leading-none">
@@ -189,7 +227,7 @@ function StatsCard() {
             className="h-full rounded-full"
             style={{
               background:
-                "linear-gradient(90deg, hsl(var(--brand)), hsl(var(--brand-2)))",
+                "linear-gradient(90deg, hsl(var(--brand)), hsl(var(--brand-3)))",
             }}
           />
         </div>
