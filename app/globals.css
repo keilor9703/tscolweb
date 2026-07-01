@@ -1,0 +1,200 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark cinematic is the primary (and only) theme */
+    --background: 232 44% 4%;
+    --foreground: 240 20% 96%;
+
+    --card: 232 34% 7%;
+    --card-foreground: 240 20% 96%;
+
+    --popover: 232 40% 6%;
+    --popover-foreground: 240 20% 96%;
+
+    --primary: 245 62% 58%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 232 28% 12%;
+    --secondary-foreground: 240 20% 96%;
+
+    --muted: 232 26% 12%;
+    --muted-foreground: 225 16% 64%;
+
+    --accent: 232 28% 15%;
+    --accent-foreground: 240 20% 96%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 232 24% 20%;
+    --input: 232 24% 20%;
+    --ring: 245 62% 58%;
+
+    --radius: 1rem;
+
+    /* Brand accents used for glows, gradients and scenography */
+    --brand: 245 62% 60%;
+    --brand-2: 262 83% 64%;
+    --brand-3: 190 92% 56%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: hidden;
+  }
+  ::selection {
+    background: hsl(var(--brand) / 0.35);
+    color: white;
+  }
+
+  /* Cinematic custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: hsl(232 40% 5%);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      hsl(var(--brand) / 0.6),
+      hsl(var(--brand-2) / 0.6)
+    );
+    border-radius: 999px;
+    border: 2px solid hsl(232 40% 5%);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(hsl(var(--brand)), hsl(var(--brand-2)));
+  }
+}
+
+@layer components {
+  /* Frosted glass surface */
+  .glass {
+    background: hsl(232 34% 8% / 0.6);
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border: 1px solid hsl(0 0% 100% / 0.08);
+  }
+
+  /* Gradient text — brand indigo → violet → cyan */
+  .text-gradient {
+    background: linear-gradient(
+      100deg,
+      hsl(var(--foreground)) 0%,
+      hsl(var(--brand)) 45%,
+      hsl(var(--brand-2)) 75%,
+      hsl(var(--brand-3)) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .text-gradient-soft {
+    background: linear-gradient(
+      180deg,
+      hsl(var(--foreground)) 0%,
+      hsl(240 20% 96% / 0.55) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Thin gradient border card */
+  .card-glow {
+    position: relative;
+    background: hsl(232 34% 7% / 0.7);
+    border: 1px solid hsl(0 0% 100% / 0.07);
+  }
+  .card-glow::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(
+      130deg,
+      hsl(var(--brand) / 0.5),
+      transparent 40%,
+      transparent 60%,
+      hsl(var(--brand-2) / 0.4)
+    );
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+  }
+  .card-glow:hover::before {
+    opacity: 1;
+  }
+
+  /* Subtle film grain overlay for the cinematic feel */
+  .grain::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    pointer-events: none;
+    opacity: 0.035;
+    mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+
+  /* Dotted grid background */
+  .bg-grid {
+    background-image: radial-gradient(
+      hsl(0 0% 100% / 0.06) 1px,
+      transparent 1px
+    );
+    background-size: 32px 32px;
+  }
+
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 55%, transparent 100%);
+  }
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 12%,
+      black 88%,
+      transparent
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 12%,
+      black 88%,
+      transparent
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
