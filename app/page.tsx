@@ -1,5 +1,5 @@
 import { Navbar } from "@/components/sections/navbar";
-import { Hero } from "@/components/sections/hero";
+import { HeroGlass } from "@/components/sections/hero-glass";
 import { Logos } from "@/components/sections/logos";
 import { Capabilities } from "@/components/sections/capabilities";
 import { Services } from "@/components/sections/services";
@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <Navbar />
       <main className="relative">
-        <Hero />
+        <HeroGlass />
         <Logos />
         <Capabilities />
         <Services />
