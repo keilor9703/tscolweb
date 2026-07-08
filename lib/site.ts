@@ -1,31 +1,14 @@
 /**
- * Brand configuration — single source of truth.
- * Change these values to rebrand the whole site (name, tagline, contact, links).
- * The name "NOVA" is a placeholder — replace it with your company's real name.
+ * Presentación Ksmart360 — configuración de marca.
+ * Producto: Ksmart360 · Empresa: Tech Stack Colombia.
  */
 export const site = {
-  name: "NOVA",
-  fullName: "NOVA Studio",
-  domain: "novastudio.dev",
-  tagline: "Estudio de desarrollo web",
-  // Short pitch used in hero / meta description
-  description:
-    "Diseñamos y construimos experiencias web de nivel mundial. Interfaces cinematográficas, rendimiento impecable y código que escala.",
-  email: "hola@novastudio.dev",
-  location: "Bogotá · Remoto en todo el mundo",
-  socials: {
-    x: "#",
-    linkedin: "#",
-    github: "#",
-    instagram: "#",
-  },
-  nav: [
-    { label: "Servicios", href: "#servicios" },
-    { label: "Lo que hacemos", href: "#capacidades" },
-    { label: "Proceso", href: "#proceso" },
-    { label: "Proyectos", href: "#proyectos" },
-    { label: "Contacto", href: "#contacto" },
-  ],
+  product: "Ksmart360",
+  company: "Tech Stack Colombia",
+  tagline: "El ERP en la nube para las PYMEs de Colombia",
+  version: "2.3.0",
+  url: "appjeylor.com",
+  api: "api.appjeylor.com",
 } as const;
 
 export type Site = typeof site;

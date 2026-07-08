@@ -14,7 +14,7 @@
     --popover: 232 40% 6%;
     --popover-foreground: 240 20% 96%;
 
-    --primary: 245 62% 58%;
+    --primary: 219 79% 54%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 232 28% 12%;
@@ -31,14 +31,14 @@
 
     --border: 232 24% 20%;
     --input: 232 24% 20%;
-    --ring: 245 62% 58%;
+    --ring: 219 79% 54%;
 
     --radius: 1rem;
 
-    /* Brand accents used for glows, gradients and scenography */
-    --brand: 245 62% 60%;
-    --brand-2: 262 83% 64%;
-    --brand-3: 190 92% 56%;
+    /* Brand accents — azul Tech Stack + acento cian */
+    --brand: 219 79% 56%;
+    --brand-2: 199 89% 56%;
+    --brand-3: 210 92% 68%;
   }
 }
 

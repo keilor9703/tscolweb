@@ -1,31 +1,40 @@
-import { Navbar } from "@/components/sections/navbar";
-import { HeroGlass } from "@/components/sections/hero-glass";
-import { Logos } from "@/components/sections/logos";
-import { Capabilities } from "@/components/sections/capabilities";
-import { Services } from "@/components/sections/services";
-import { Process } from "@/components/sections/process";
-import { Stats } from "@/components/sections/stats";
-import { Projects } from "@/components/sections/projects";
-import { Testimonials } from "@/components/sections/testimonials";
-import { CTA } from "@/components/sections/cta";
-import { Footer } from "@/components/sections/footer";
+import { Deck } from "@/components/deck/deck";
+import {
+  TitleSlide,
+  ProblemSlide,
+  SolutionSlide,
+  StatsSlide,
+  BusinessTypesSlide,
+  ModulesSlide,
+  DifferentiatorsSlide,
+  CapabilitiesSlide,
+  DianSlide,
+  CatalogSlide,
+  TechSlide,
+  SecuritySlide,
+  PlansSlide,
+  StepsSlide,
+  CloseSlide,
+} from "@/components/deck/slides";
 
 export default function Home() {
-  return (
-    <>
-      <Navbar />
-      <main className="relative">
-        <HeroGlass />
-        <Logos />
-        <Capabilities />
-        <Services />
-        <Process />
-        <Stats />
-        <Projects />
-        <Testimonials />
-        <CTA />
-      </main>
-      <Footer />
-    </>
-  );
+  const slides = [
+    <TitleSlide key="title" />,
+    <ProblemSlide key="problem" />,
+    <SolutionSlide key="solution" />,
+    <StatsSlide key="stats" />,
+    <BusinessTypesSlide key="types" />,
+    <ModulesSlide key="modules" />,
+    <DifferentiatorsSlide key="diff" />,
+    <CapabilitiesSlide key="caps" />,
+    <DianSlide key="dian" />,
+    <CatalogSlide key="catalog" />,
+    <TechSlide key="tech" />,
+    <SecuritySlide key="security" />,
+    <PlansSlide key="plans" />,
+    <StepsSlide key="steps" />,
+    <CloseSlide key="close" />,
+  ];
+
+  return <Deck slides={slides} />;
 }

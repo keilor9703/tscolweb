@@ -22,22 +22,14 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: `${site.fullName} — ${site.tagline}`,
-  description: site.description,
-  openGraph: {
-    title: `${site.fullName} — ${site.tagline}`,
-    description: site.description,
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: `${site.fullName} — ${site.tagline}`,
-    description: site.description,
-  },
+  title: `${site.product} — ${site.tagline}`,
+  description: `Presentación de ${site.product}, el ERP SaaS multi-tenant para PYMEs colombianas, por ${site.company}.`,
 };
 
 export const viewport: Viewport = {
   themeColor: "#08090f",
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({
@@ -48,9 +40,9 @@ export default function RootLayout({
   return (
     <html
       lang="es"
-      className={`${heading.variable} ${body.variable} ${mono.variable}`}
+      className={`dark ${heading.variable} ${body.variable} ${mono.variable}`}
     >
-      <body className="grain">{children}</body>
+      <body className="bg-background">{children}</body>
     </html>
   );
 }
