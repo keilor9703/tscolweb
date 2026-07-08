@@ -1,5 +1,57 @@
 /** Contenido de la presentación — extraído del código y marketing reales de Ksmart360. */
 
+/* ─── Arco de apertura: problema → necesidad → solución ─── */
+
+// Preguntas que un emprendedor "a ciegas" no puede responder (slide del desorden).
+export const painQuestions = [
+  "¿Cuánto gané realmente este mes?",
+  "¿A quién le fié y cuánto me deben?",
+  "¿Qué producto se vende más?",
+  "¿Cuánto tengo en inventario ahora?",
+  "¿Ya se me acabó otra vez?",
+  "¿Dónde anoté esa venta?",
+];
+
+// Cifras de impacto. ⚠️ Verifica y actualiza las fuentes antes de presentar.
+export const failureStats = [
+  {
+    value: 70,
+    suffix: "%",
+    label: "de los negocios nuevos NO superan los 5 años",
+    source: "Confecámaras · supervivencia empresarial",
+  },
+  {
+    value: 60,
+    suffix: "%",
+    label: "de los micronegocios en Colombia son informales",
+    source: "DANE · micronegocios",
+  },
+  {
+    value: 1,
+    prefix: "#",
+    label: "causa de cierre: no controlar las finanzas, no las ventas",
+    source: "Estudios de mortalidad empresarial",
+    isText: true,
+  },
+];
+
+// Lo que la mayoría hace hoy vs. lo que necesita.
+export const painToday = [
+  { icon: "📓", text: "Las cuentas en un cuaderno… o en la memoria" },
+  { icon: "🤯", text: "No sé si gané o perdí hasta fin de mes" },
+  { icon: "📦", text: "Me entero que no hay stock cuando el cliente ya está en frente" },
+  { icon: "🧾", text: "Sin factura electrónica: puertas cerradas y riesgo con la DIAN" },
+];
+
+// Criterios que debe cumplir la solución (puente hacia Ksmart360).
+export const needCriteria = [
+  { icon: "📊", title: "Ver tus números", desc: "Saber cuánto vendes, cuánto ganas y qué te deben — en tiempo real." },
+  { icon: "📦", title: "Controlar tu inventario", desc: "Saber qué tienes, qué se vende y cuándo reponer, sin adivinar." },
+  { icon: "🧾", title: "Cumplirle a la DIAN", desc: "Factura electrónica legal, sin sustos ni multas." },
+  { icon: "📱", title: "Simple y desde el celular", desc: "Sin instalar nada, sin ser experto. Empiezas hoy mismo." },
+];
+
+
 export const stats = [
   { value: "18+", label: "Módulos activos" },
   { value: "5", label: "Tipos de negocio" },

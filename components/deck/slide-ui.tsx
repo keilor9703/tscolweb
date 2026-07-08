@@ -1,8 +1,41 @@
 "use client";
 
-import { motion, type Variants } from "framer-motion";
-import { type ReactNode } from "react";
+import { animate, motion, type Variants } from "framer-motion";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { cn } from "@/lib/utils";
+
+/** Number that counts up from 0 when it mounts. */
+export function CountUp({
+  to,
+  duration = 1.6,
+  prefix = "",
+  suffix = "",
+}: {
+  to: number;
+  duration?: number;
+  prefix?: string;
+  suffix?: string;
+}) {
+  const [val, setVal] = useState(0);
+  const started = useRef(false);
+  useEffect(() => {
+    if (started.current) return;
+    started.current = true;
+    const controls = animate(0, to, {
+      duration,
+      ease: [0.22, 1, 0.36, 1],
+      onUpdate: (v) => setVal(Math.round(v)),
+    });
+    return () => controls.stop();
+  }, [to, duration]);
+  return (
+    <span>
+      {prefix}
+      {val}
+      {suffix}
+    </span>
+  );
+}
 
 const EASE = [0.22, 1, 0.36, 1] as const;
 

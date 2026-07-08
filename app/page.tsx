@@ -1,7 +1,6 @@
 import { Deck } from "@/components/deck/deck";
 import {
   TitleSlide,
-  ProblemSlide,
   SolutionSlide,
   StatsSlide,
   BusinessTypesSlide,
@@ -16,11 +15,31 @@ import {
   StepsSlide,
   CloseSlide,
 } from "@/components/deck/slides";
+import {
+  HookSlide,
+  ChaosSlide,
+  FailureStatsSlide,
+  PainTodaySlide,
+  DianRiskSlide,
+  ReframeSlide,
+  NeedSlide,
+  RevealSolutionSlide,
+} from "@/components/deck/slides-intro";
 
 export default function Home() {
   const slides = [
+    // Portada
     <TitleSlide key="title" />,
-    <ProblemSlide key="problem" />,
+    // ── Arco emocional: problema → necesidad ──
+    <HookSlide key="hook" />,
+    <ChaosSlide key="chaos" />,
+    <FailureStatsSlide key="failure" />,
+    <PainTodaySlide key="pain" />,
+    <DianRiskSlide key="dian-risk" />,
+    <ReframeSlide key="reframe" />,
+    <NeedSlide key="need" />,
+    // ── La solución: Ksmart360 ──
+    <RevealSolutionSlide key="reveal" />,
     <SolutionSlide key="solution" />,
     <StatsSlide key="stats" />,
     <BusinessTypesSlide key="types" />,
