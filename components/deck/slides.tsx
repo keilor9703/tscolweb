@@ -277,7 +277,8 @@ export function CapabilitiesSlide() {
     <SlideShell center={false}>
       <Kicker>Todo lo que incluye</Kicker>
       <SlideTitle className="mt-6 text-left">
-        Un ERP <span className="text-gradient">completo</span>
+        Todo tu negocio,{" "}
+        <span className="text-gradient">en un solo lugar</span>
       </SlideTitle>
       <Reveal className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
         {capabilities.map((c) => (
