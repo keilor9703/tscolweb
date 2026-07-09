@@ -1,8 +1,9 @@
 # Ksmart360 — Presentación (deck de slides)
 
-Presentación web a pantalla completa para exponer **Ksmart360** —el ERP SaaS
-multi-tenant para PYMEs colombianas de **Tech Stack Colombia**— ante un grupo de
-empresarios. Se abre en el navegador y se navega como un deck de diapositivas.
+Presentación web a pantalla completa para exponer **Ksmart360** —la plataforma
+SaaS de gestión multi-tenant para PYMEs colombianas de **Tech Stack Colombia**—
+ante un grupo de emprendedores. Se abre en el navegador y se navega como un deck
+de diapositivas.
 
 Construida con **Next.js 14 · TypeScript · Tailwind CSS** (estructura shadcn),
 animaciones con **framer-motion**. El contenido proviene del código y el

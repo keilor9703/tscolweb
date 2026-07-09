@@ -5,7 +5,7 @@
 export const site = {
   product: "Ksmart360",
   company: "Tech Stack Colombia",
-  tagline: "El ERP en la nube para las PYMEs de Colombia",
+  tagline: "La plataforma para gestionar todo tu negocio",
   version: "2.3.0",
   url: "appjeylor.com",
   api: "api.appjeylor.com",

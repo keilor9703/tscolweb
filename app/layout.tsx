@@ -23,7 +23,7 @@ const mono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: `${site.product} — ${site.tagline}`,
-  description: `Presentación de ${site.product}, el ERP SaaS multi-tenant para PYMEs colombianas, por ${site.company}.`,
+  description: `Presentación de ${site.product}, la plataforma de gestión en la nube para PYMEs colombianas, por ${site.company}.`,
 };
 
 export const viewport: Viewport = {
