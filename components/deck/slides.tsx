@@ -389,32 +389,73 @@ export function CatalogSlide() {
           initial={{ opacity: 0, scale: 0.96, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
           transition={{ duration: 0.8, ease: EASE, delay: 0.2 }}
-          className="card-glow rounded-3xl p-6"
+          className="relative"
         >
-          <div className="flex items-center gap-2 border-b border-white/8 pb-4">
-            <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
-            <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
-            <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
-            <span className="ml-2 text-xs text-muted-foreground">
-              {site.url}/mi-tienda
-            </span>
-          </div>
-          <div className="mt-5 grid grid-cols-2 gap-3">
-            {[0, 1, 2, 3].map((i) => (
-              <div key={i} className="rounded-xl border border-white/8 bg-white/[0.03] p-3">
-                <div className="mb-3 aspect-square rounded-lg bg-gradient-to-br from-[hsl(var(--brand)/0.35)] to-[hsl(var(--brand-2)/0.25)]" />
-                <div className="h-2 w-3/4 rounded bg-white/15" />
-                <div className="mt-2 h-2.5 w-1/2 rounded bg-[hsl(var(--brand)/0.6)]" />
-              </div>
-            ))}
-          </div>
-          <div className="mt-4 flex items-center justify-between rounded-xl bg-[hsl(var(--brand)/0.15)] px-4 py-3">
-            <span className="text-sm font-medium">Enviar pedido</span>
-            <MessageCircle className="h-4 w-4 text-[hsl(var(--brand))]" />
-          </div>
+          <StoreShowcase />
         </motion.div>
       </div>
     </SlideShell>
+  );
+}
+
+/**
+ * Muestra capturas reales de la tienda virtual de Ksmart360.
+ * Coloca las imágenes en /public/screens/  (ver public/screens/README.md).
+ * Si un archivo no existe, se muestra un respaldo para que nunca se vea roto.
+ */
+function StoreShowcase() {
+  const [mainErr, setMainErr] = useState(false);
+  const [chipErr, setChipErr] = useState(false);
+  return (
+    <div className="relative">
+      {/* Ventana del navegador */}
+      <div className="card-glow overflow-hidden rounded-3xl">
+        <div className="flex items-center gap-2 border-b border-white/8 px-5 py-3">
+          <span className="h-2.5 w-2.5 rounded-full bg-[#ff5f57]" />
+          <span className="h-2.5 w-2.5 rounded-full bg-[#febc2e]" />
+          <span className="h-2.5 w-2.5 rounded-full bg-[#28c840]" />
+          <span className="ml-2 truncate text-xs text-muted-foreground">
+            {site.url}/mi-tienda
+          </span>
+        </div>
+
+        {mainErr ? (
+          /* Respaldo: mock del catálogo */
+          <div className="p-6">
+            <div className="grid grid-cols-2 gap-3">
+              {[0, 1, 2, 3].map((i) => (
+                <div key={i} className="rounded-xl border border-white/8 bg-white/[0.03] p-3">
+                  <div className="mb-3 aspect-square rounded-lg bg-gradient-to-br from-[hsl(var(--brand)/0.35)] to-[hsl(var(--brand-2)/0.25)]" />
+                  <div className="h-2 w-3/4 rounded bg-white/15" />
+                  <div className="mt-2 h-2.5 w-1/2 rounded bg-[hsl(var(--brand)/0.6)]" />
+                </div>
+              ))}
+            </div>
+            <div className="mt-4 flex items-center justify-between rounded-xl bg-[hsl(var(--brand)/0.15)] px-4 py-3">
+              <span className="text-sm font-medium">Enviar pedido</span>
+              <MessageCircle className="h-4 w-4 text-[hsl(var(--brand))]" />
+            </div>
+          </div>
+        ) : (
+          <img
+            src="/screens/catalogo.png"
+            alt="Catálogo virtual de una tienda en Ksmart360"
+            className="block w-full"
+            onError={() => setMainErr(true)}
+          />
+        )}
+      </div>
+
+      {/* Tarjeta flotante: pedido recibido (se oculta si no hay imagen) */}
+      {!chipErr && (
+        <img
+          src="/screens/pedido.png"
+          alt="Pedido recibido en Ksmart360"
+          className="absolute -bottom-5 -left-5 w-36 rounded-2xl border border-white/10 shadow-2xl md:w-44"
+          onError={() => setChipErr(true)}
+        />
+      )}
+    </div>
   );
 }
 

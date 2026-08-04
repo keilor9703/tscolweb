@@ -213,7 +213,7 @@ conocimientos técnicos).
 > negocio puede estar en orden **desde el primer día**. Muchas gracias."
 >
 > *(Cierra con la llamada a la acción concreta: dónde te buscan — tu WhatsApp,
-> tu stand, o **appjeylor.com**.)*
+> tu stand, o **ksmart360.com**.)*
 
 ---
 

@@ -7,8 +7,8 @@ export const site = {
   company: "Tech Stack Colombia",
   tagline: "La plataforma para gestionar todo tu negocio",
   version: "2.3.0",
-  url: "appjeylor.com",
-  api: "api.appjeylor.com",
+  url: "ksmart360.com",
+  api: "api.ksmart360.com",
 } as const;
 
 export type Site = typeof site;
