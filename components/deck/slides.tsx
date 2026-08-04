@@ -419,31 +419,29 @@ function StoreShowcase() {
           </span>
         </div>
 
-        {mainErr ? (
-          /* Respaldo: mock del catálogo */
-          <div className="p-6">
-            <div className="grid grid-cols-2 gap-3">
-              {[0, 1, 2, 3].map((i) => (
-                <div key={i} className="rounded-xl border border-white/8 bg-white/[0.03] p-3">
-                  <div className="mb-3 aspect-square rounded-lg bg-gradient-to-br from-[hsl(var(--brand)/0.35)] to-[hsl(var(--brand-2)/0.25)]" />
-                  <div className="h-2 w-3/4 rounded bg-white/15" />
-                  <div className="mt-2 h-2.5 w-1/2 rounded bg-[hsl(var(--brand)/0.6)]" />
-                </div>
-              ))}
+        <div className="max-h-[52vh] overflow-hidden">
+          {mainErr ? (
+            /* Respaldo: mock del catálogo */
+            <div className="p-6">
+              <div className="grid grid-cols-2 gap-3">
+                {[0, 1, 2, 3].map((i) => (
+                  <div key={i} className="rounded-xl border border-white/8 bg-white/[0.03] p-3">
+                    <div className="mb-3 aspect-square rounded-lg bg-gradient-to-br from-[hsl(var(--brand)/0.35)] to-[hsl(var(--brand-2)/0.25)]" />
+                    <div className="h-2 w-3/4 rounded bg-white/15" />
+                    <div className="mt-2 h-2.5 w-1/2 rounded bg-[hsl(var(--brand)/0.6)]" />
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="mt-4 flex items-center justify-between rounded-xl bg-[hsl(var(--brand)/0.15)] px-4 py-3">
-              <span className="text-sm font-medium">Enviar pedido</span>
-              <MessageCircle className="h-4 w-4 text-[hsl(var(--brand))]" />
-            </div>
-          </div>
-        ) : (
-          <img
-            src="/screens/catalogo.png"
-            alt="Catálogo virtual de una tienda en Ksmart360"
-            className="block w-full"
-            onError={() => setMainErr(true)}
-          />
-        )}
+          ) : (
+            <img
+              src="/screens/catalogo.png"
+              alt="Catálogo virtual de una tienda en Ksmart360"
+              className="block w-full"
+              onError={() => setMainErr(true)}
+            />
+          )}
+        </div>
       </div>
 
       {/* Tarjeta flotante: pedido recibido (se oculta si no hay imagen) */}
@@ -451,7 +449,7 @@ function StoreShowcase() {
         <img
           src="/screens/pedido.png"
           alt="Pedido recibido en Ksmart360"
-          className="absolute -bottom-5 -left-5 w-36 rounded-2xl border border-white/10 shadow-2xl md:w-44"
+          className="absolute -bottom-6 -left-8 w-40 rotate-[-4deg] rounded-xl border border-white/15 shadow-[0_20px_60px_-15px_rgba(0,0,0,0.9)] md:w-52"
           onError={() => setChipErr(true)}
         />
       )}
