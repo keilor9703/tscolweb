@@ -47,14 +47,15 @@ export function TitleSlide() {
         </RevealItem>
         <RevealItem>
           <h1 className="font-heading max-w-4xl text-balance text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-            El <span className="text-gradient">sistema operativo</span> de las
-            PYMEs colombianas
+            El <span className="text-gradient">sistema operativo</span> de los
+            empresarios colombianos
           </h1>
         </RevealItem>
         <RevealItem>
           <p className="max-w-2xl text-balance text-lg text-muted-foreground md:text-xl">
-            {site.tagline}. Ventas, inventario, finanzas y facturación
-            electrónica — todo en un solo lugar, desde la nube.
+            En {site.company} no desarrollamos software. Creamos soluciones
+            tecnológicas que ayudan a los empresarios a tomar el control de sus
+            negocios y a crecer con confianza.
           </p>
         </RevealItem>
         <RevealItem>
