@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -22,7 +23,8 @@ import {
   capabilities,
   techStack,
   security,
-  plans,
+  planPricing,
+  billingPeriods,
   onboardingSteps,
 } from "@/lib/deck-data";
 import {
@@ -481,65 +483,131 @@ export function SecuritySlide() {
 }
 
 /* 13 — Planes */
+const fmtCOP = (n: number) => "$" + Math.round(n).toLocaleString("es-CO");
+
 export function PlansSlide() {
+  const [periodKey, setPeriodKey] = useState("mensual");
+  const period = billingPeriods.find((b) => b.key === periodKey) ?? billingPeriods[0];
+  const disc = period.discount;
+
   return (
     <SlideShell center={false}>
       <div className="flex flex-col items-center text-center">
         <Kicker>Planes</Kicker>
-        <SlideTitle className="mt-5">
+        <SlideTitle className="mt-4">
           Desde <span className="text-gradient">$29.900</span> al mes
         </SlideTitle>
-        <p className="mt-4 max-w-2xl text-muted-foreground">
-          Prueba gratis 14 días, sin tarjeta. Hasta −20% pagando anual.
+        <p className="mt-3 max-w-2xl text-muted-foreground">
+          Prueba gratis 14 días, sin tarjeta. Paga mensual, o ahorra hasta −20%.
         </p>
-      </div>
-      <Reveal className="mt-10 grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
-        {plans.map((p) => (
-          <RevealItem key={p.name}>
-            <div
+
+        {/* Selector de periodo */}
+        <div className="mt-6 inline-flex items-center gap-1 rounded-full border border-white/10 bg-white/5 p-1">
+          {billingPeriods.map((b) => (
+            <button
+              key={b.key}
+              onClick={() => setPeriodKey(b.key)}
               className={
-                "relative flex h-full flex-col rounded-2xl p-6 text-left " +
-                (p.highlight
-                  ? "bg-[hsl(var(--brand))] text-white shadow-[0_20px_50px_-10px_hsl(var(--brand)/0.5)]"
-                  : "card-glow")
+                "flex items-center gap-1.5 rounded-full px-4 py-2 text-sm font-medium transition-colors " +
+                (periodKey === b.key
+                  ? "bg-[hsl(var(--brand))] text-white"
+                  : "text-muted-foreground hover:text-foreground")
               }
             >
-              {p.highlight && (
-                <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-background px-3 py-1 text-[11px] font-semibold text-foreground">
-                  Más elegido
+              {b.label}
+              {b.badge && (
+                <span
+                  className={
+                    "rounded-full px-1.5 py-0.5 text-[10px] font-semibold " +
+                    (periodKey === b.key
+                      ? "bg-white/20 text-white"
+                      : "bg-emerald-500/15 text-emerald-400")
+                  }
+                >
+                  {b.badge}
                 </span>
               )}
-              <div className="text-2xl">{p.icon}</div>
-              <h3 className="font-heading mt-3 text-base font-semibold">
-                {p.name}
-              </h3>
-              <div className="font-heading mt-1 text-2xl font-bold">
-                {p.price}
-              </div>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <Reveal className="mt-8 grid gap-4 sm:grid-cols-3 lg:grid-cols-5">
+        {planPricing.map((p) => {
+          const perMonth = p.monthly * (1 - disc);
+          const total = perMonth * period.months;
+          const saved = p.monthly * disc * period.months;
+          return (
+            <RevealItem key={p.name}>
               <div
                 className={
-                  "text-xs " + (p.highlight ? "text-white/70" : "text-muted-foreground")
+                  "relative flex h-full flex-col rounded-2xl p-6 text-left " +
+                  (p.highlight
+                    ? "bg-[hsl(var(--brand))] text-white shadow-[0_20px_50px_-10px_hsl(var(--brand)/0.5)]"
+                    : "card-glow")
                 }
               >
-                {p.period}
+                {p.highlight && (
+                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-full bg-background px-3 py-1 text-[11px] font-semibold text-foreground">
+                    Más elegido
+                  </span>
+                )}
+                <div className="text-2xl">{p.icon}</div>
+                <h3 className="font-heading mt-3 text-base font-semibold">
+                  {p.name}
+                </h3>
+
+                {p.free ? (
+                  <>
+                    <div className="font-heading mt-1 text-2xl font-bold">Gratis</div>
+                    <div className={"text-xs " + (p.highlight ? "text-white/70" : "text-muted-foreground")}>
+                      {p.period}
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <div className="font-heading mt-1 text-2xl font-bold">
+                      {fmtCOP(perMonth)}
+                      <span className={"ml-1 text-xs font-normal " + (p.highlight ? "text-white/70" : "text-muted-foreground")}>
+                        /mes
+                      </span>
+                    </div>
+                    {disc > 0 ? (
+                      <div className="mt-1 text-[11px] leading-tight">
+                        <span className={p.highlight ? "text-white/70" : "text-muted-foreground"}>
+                          {period.totalLabel}: <span className="font-semibold">{fmtCOP(total)}</span>
+                        </span>
+                        <br />
+                        <span className={p.highlight ? "text-white/90" : "text-emerald-400"}>
+                          ahorras {fmtCOP(saved)}
+                        </span>
+                      </div>
+                    ) : (
+                      <div className={"mt-1 text-[11px] " + (p.highlight ? "text-white/60" : "text-muted-foreground")}>
+                        pago cada mes
+                      </div>
+                    )}
+                  </>
+                )}
+
+                <div
+                  className={
+                    "mt-4 rounded-lg px-2 py-1.5 text-center text-[11px] font-medium " +
+                    (p.fe
+                      ? p.highlight
+                        ? "bg-white/20"
+                        : "bg-orange-500/10 text-orange-400"
+                      : p.highlight
+                        ? "bg-white/10 text-white/60"
+                        : "bg-white/5 text-muted-foreground")
+                  }
+                >
+                  {p.fe ? `FE DIAN · ${p.fe}/mes` : "Sin FE DIAN"}
+                </div>
               </div>
-              <div
-                className={
-                  "mt-4 rounded-lg px-2 py-1.5 text-center text-[11px] font-medium " +
-                  (p.fe
-                    ? p.highlight
-                      ? "bg-white/20"
-                      : "bg-orange-500/10 text-orange-400"
-                    : p.highlight
-                      ? "bg-white/10 text-white/60"
-                      : "bg-white/5 text-muted-foreground")
-                }
-              >
-                {p.fe ? `FE DIAN · ${p.fe}/mes` : "Sin FE DIAN"}
-              </div>
-            </div>
-          </RevealItem>
-        ))}
+            </RevealItem>
+          );
+        })}
       </Reveal>
     </SlideShell>
   );

@@ -190,8 +190,10 @@ conocimientos técnicos).
 
 ### 20. *Desde $29.900 al mes*
 > "¿Y esto cuánto vale? Menos de lo que muchos gastan en un almuerzo a la semana.
-> Desde **$29.900 al mes**. Y lo mejor: pueden **probarlo gratis 14 días**, sin
-> tarjeta, sin compromiso. El plan más elegido incluye ya la factura electrónica."
+> Desde **$29.900 al mes**. Y si pagas **trimestral ahorras 10%**, o **anual
+> ahorras 20%**. *(Toca el selector para mostrarlo.)* Y lo mejor: pueden
+> **probarlo gratis 14 días**, sin tarjeta, sin compromiso. El plan más elegido
+> ya incluye la factura electrónica."
 
 ▶ (avanza)
 

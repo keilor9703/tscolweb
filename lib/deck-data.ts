@@ -179,12 +179,20 @@ export const security = [
   { icon: "🛡️", title: "Conexión siempre segura", desc: "Tu información viaja cifrada, igual que en la banca en línea." },
 ];
 
-export const plans = [
-  { name: "Trial", icon: "⚡", price: "Gratis", period: "14 días", fe: false, highlight: false },
-  { name: "Básico", icon: "🚀", price: "$29.900", period: "/mes", fe: false, highlight: false },
-  { name: "Emprendedor", icon: "✨", price: "$49.900", period: "/mes", fe: "100 docs", highlight: false },
-  { name: "Comercio", icon: "🏆", price: "$69.900", period: "/mes", fe: "200 docs", highlight: true },
-  { name: "Empresarial", icon: "🏢", price: "$89.900", period: "/mes", fe: "350 docs", highlight: false },
+// Periodos de facturación y sus descuentos.
+export const billingPeriods = [
+  { key: "mensual", label: "Mensual", discount: 0, months: 1, totalLabel: null, badge: null },
+  { key: "trimestral", label: "Trimestral", discount: 0.1, months: 3, totalLabel: "Total cada 3 meses", badge: "−10%" },
+  { key: "anual", label: "Anual", discount: 0.2, months: 12, totalLabel: "Total al año", badge: "−20%" },
+];
+
+// Precio mensual base (sin descuento). Trial es gratis.
+export const planPricing = [
+  { name: "Trial", icon: "⚡", free: true, period: "14 días", monthly: 0, fe: false, highlight: false },
+  { name: "Básico", icon: "🚀", free: false, period: "/mes", monthly: 29900, fe: false, highlight: false },
+  { name: "Emprendedor", icon: "✨", free: false, period: "/mes", monthly: 49900, fe: "100 docs", highlight: false },
+  { name: "Comercio", icon: "🏆", free: false, period: "/mes", monthly: 69900, fe: "200 docs", highlight: true },
+  { name: "Empresarial", icon: "🏢", free: false, period: "/mes", monthly: 89900, fe: "350 docs", highlight: false },
 ];
 
 export const onboardingSteps = [
