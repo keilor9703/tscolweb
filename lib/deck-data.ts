@@ -94,8 +94,8 @@ export const differentiators = [
   },
   {
     icon: "🌍",
-    title: "Auto-completado global",
-    desc: "Escanea un producto y el nombre, la descripción y la imagen se cargan solos desde bases de datos mundiales.",
+    title: "Registra productos con solo escanear",
+    desc: "Escanea el código de barras y el nombre, la descripción y la foto se cargan solos. Tú solo pones el precio.",
   },
   {
     icon: "🛍️",
@@ -109,13 +109,13 @@ export const differentiators = [
   },
   {
     icon: "👆",
-    title: "Acceso biométrico FIDO2",
-    desc: "Entra con huella o rostro. La misma tecnología WebAuthn que usan los bancos. Sin contraseñas.",
+    title: "Entra con tu huella o tu rostro",
+    desc: "La misma seguridad que usan los bancos. Sin contraseñas que se te olviden.",
   },
   {
     icon: "📒",
     title: "Contabilidad automática",
-    desc: "Cada venta, compra o gasto genera su asiento en partida doble según el PUC colombiano. Sin ser contador.",
+    desc: "Cada venta, compra o gasto queda registrado en tu contabilidad, al día. Sin ser contador ni pagar uno.",
   },
 ];
 
@@ -133,52 +133,50 @@ export const capabilities = [
   {
     category: "Inventario",
     items: [
-      "Auto-completado global al escanear",
-      "Productos con variantes",
-      "Lotes y vencimientos (FEFO)",
-      "Kardex con trazabilidad total",
-      "Alertas de stock mínimo",
+      "Registra productos con solo escanear",
+      "Variantes por talla, color o sabor",
+      "Control de fechas de vencimiento",
+      "Historial completo de cada producto",
+      "Te avisa cuando algo se está agotando",
     ],
   },
   {
     category: "Clientes y cobros",
     items: [
-      "Cartera con aging (30/60/90 días)",
-      "Cobro por WhatsApp en un clic",
-      "Recibo PDF por WhatsApp",
-      "Alertas de vencimiento",
-      "Programa de puntos",
+      "Sabes quién te debe y desde cuándo",
+      "Cobras por WhatsApp en un clic",
+      "Envías el recibo por WhatsApp",
+      "Te avisa cuando una cuota se vence",
+      "Premias a tus clientes con puntos",
     ],
   },
   {
     category: "Análisis y finanzas",
     items: [
-      "Dashboard en tiempo real",
-      "9 tipos de reporte",
-      "Contabilidad automática PUC",
-      "IVA y Caja/Bancos automáticos",
-      "Export a Excel y PDF",
+      "Tus números del día, en pantalla",
+      "9 reportes listos de tu negocio",
+      "Contabilidad automática (sin ser contador)",
+      "Separa el IVA y la caja por ti",
+      "Exportas a Excel y PDF",
     ],
   },
 ];
 
+// Beneficios "de la tecnología" en lenguaje llano (no jerga).
 export const techStack = [
-  { label: "React 18", desc: "Frontend SPA" },
-  { label: "FastAPI", desc: "Backend Python 3.11" },
-  { label: "PostgreSQL 17", desc: "Base de datos" },
-  { label: "Oracle Cloud", desc: "Infraestructura ARM" },
-  { label: "Nginx + SSL", desc: "Proxy inverso" },
-  { label: "Wompi", desc: "Pagos Colombia" },
-  { label: "DIAN / Matias", desc: "Facturación electrónica" },
-  { label: "WebAuthn FIDO2", desc: "Biometría" },
-  { label: "WhatsApp API", desc: "Notificaciones" },
+  { icon: "☁️", label: "En la nube", desc: "Aunque se dañe tu celular, tu información no se pierde." },
+  { icon: "🔄", label: "Respaldos diarios", desc: "Copias de seguridad automáticas, sin que hagas nada." },
+  { icon: "📱", label: "En todos tus equipos", desc: "Celular, tablet o computador. Donde estés." },
+  { icon: "🟢", label: "Siempre disponible", desc: "Funciona día y noche, todos los días del año." },
+  { icon: "🚫", label: "Sin instalar nada", desc: "Se abre en el navegador. Sin programas ni mantenimiento." },
+  { icon: "🇨🇴", label: "Soporte cercano", desc: "Un equipo colombiano que te habla claro y te acompaña." },
 ];
 
 export const security = [
-  { icon: "🔑", title: "JWT + empresa_id", desc: "Aislamiento multi-tenant en cada request." },
-  { icon: "👆", title: "Biométrico FIDO2", desc: "Huella o rostro con WebAuthn. Sin contraseña." },
-  { icon: "🛡️", title: "RBAC multi-módulo", desc: "Permisos por rol en 18+ módulos." },
-  { icon: "🔒", title: "HTTPS forzado", desc: "Let's Encrypt con renovación automática." },
+  { icon: "🔒", title: "Tu información es solo tuya", desc: "Los datos de tu negocio están separados y protegidos. Nadie más los ve." },
+  { icon: "👆", title: "Entra con tu huella o tu rostro", desc: "Como en tu celular o tu banco. Sin contraseñas que se te olviden." },
+  { icon: "👥", title: "Cada quien ve lo suyo", desc: "Tú decides qué puede ver y hacer cada empleado." },
+  { icon: "🛡️", title: "Conexión siempre segura", desc: "Tu información viaja cifrada, igual que en la banca en línea." },
 ];
 
 export const plans = [

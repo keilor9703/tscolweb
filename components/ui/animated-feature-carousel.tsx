@@ -83,31 +83,31 @@ const TOTAL_STEPS = 4
 const steps: readonly Step[] = [
   {
     id: "1",
-    name: "POS",
-    title: "Un POS para cómo realmente vendes",
+    name: "Ventas",
+    title: "Un punto de venta para tu forma de vender",
     description:
-      "Modo clásico con teclado y lector, o modo táctil para tablet. Escanea con la cámara del celular. Hasta 4 métodos de pago en una sola venta.",
+      "Con lector de barras o con la cámara del celular. En computador o en tablet. Y recibe efectivo, Nequi, tarjeta y más — todo en una sola venta.",
   },
   {
     id: "2",
     name: "Inventario",
-    title: "Inventario que se gestiona solo",
+    title: "Tu inventario se cuadra solo",
     description:
-      "Cada venta descuenta, cada compra suma, cada producción consume insumos. Lotes FEFO, variantes, kardex y alertas de stock mínimo automáticas.",
+      "Cada venta descuenta y cada compra suma, sin cálculos a mano. Controla vencimientos, maneja tallas y colores, y te avisa cuando algo se está agotando.",
   },
   {
     id: "3",
     name: "Finanzas",
-    title: "Contabilidad y reportes automáticos",
+    title: "Tus números al día, sin ser contador",
     description:
-      "Cada movimiento genera su asiento en partida doble según el PUC. Dashboard en tiempo real y 9 tipos de reporte, exportables a Excel y PDF.",
+      "Cada venta, compra o gasto arma tu contabilidad sola. Ves cuánto vendiste y cuánto ganaste en el día, con reportes listos para Excel y PDF.",
   },
   {
     id: "4",
-    name: "Digital",
-    title: "Catálogo virtual con pedidos a WhatsApp",
+    name: "Tienda online",
+    title: "Tu tienda en internet, con pedidos por WhatsApp",
     description:
-      "Tu tienda online con URL propia. El cliente arma el carrito y el pedido llega a tu WhatsApp y al sistema, con el stock siempre sincronizado.",
+      "Tu catálogo online con enlace propio para compartir. El cliente arma su pedido y te llega directo al WhatsApp y al sistema, con el inventario siempre al día.",
   },
 ]
 

@@ -173,7 +173,8 @@ export function StatsSlide() {
         transition={{ delay: 0.8, duration: 0.8 }}
         className="mt-14 text-center text-muted-foreground"
       >
-        Infraestructura Oracle Cloud · PostgreSQL 17 · API en {site.api}
+        Un sistema probado, funcionando todos los días en negocios reales de
+        Colombia.
       </motion.p>
     </SlideShell>
   );
@@ -328,14 +329,14 @@ export function DianSlide() {
         </RevealItem>
         <RevealItem>
           <p className="max-w-2xl text-balance text-lg text-muted-foreground md:text-xl">
-            Resoluciones, numeración automática, CUFE, QR y XML/PDF. Emite
-            facturas legales sin salir del sistema — desde 100 hasta 350
-            documentos al mes según tu plan.
+            Emite facturas 100% legales ante la DIAN, con su código y su QR, sin
+            salir del sistema y sin trámites enredados. Le vendes a empresas y al
+            Estado con tranquilidad.
           </p>
         </RevealItem>
         <RevealItem>
           <div className="flex flex-wrap justify-center gap-3">
-            {["CUFE + QR", "Resoluciones DIAN", "XML / PDF", "Modo pruebas y producción"].map(
+            {["Factura legal DIAN", "Con código y QR", "Sin trámites enredados", "Le vendes a quien sea"].map(
               (t) => (
                 <span key={t} className="glass rounded-full px-4 py-2 text-sm">
                   {t}
@@ -415,33 +416,39 @@ export function CatalogSlide() {
   );
 }
 
-/* 11 — Tecnología */
+/* 11 — Tecnología (en lenguaje llano) */
 export function TechSlide() {
   return (
     <SlideShell center={false}>
-      <Kicker>Ingeniería seria</Kicker>
+      <Kicker>Tú tranquilo</Kicker>
       <SlideTitle className="mt-6 text-left">
-        Infraestructura de{" "}
-        <span className="text-gradient">nivel enterprise</span>
+        Tú te dedicas a vender.{" "}
+        <span className="text-gradient">De la tecnología nos encargamos nosotros.</span>
       </SlideTitle>
-      <p className="mt-4 max-w-2xl text-left text-lg text-muted-foreground">
-        Oracle Cloud ARM · PostgreSQL 17 auto-hospedado · 99.9% de uptime.
-      </p>
-      <Reveal className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-3">
+      <Reveal className="mt-10 grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3">
         {techStack.map((t) => (
           <RevealItem key={t.label}>
-            <div className="card-glow flex items-center gap-3 rounded-2xl p-4 text-left">
-              <div className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-[hsl(var(--brand)/0.15)]">
-                <span className="h-2 w-2 rounded-full bg-[hsl(var(--brand))]" />
-              </div>
+            <div className="card-glow flex items-start gap-4 rounded-2xl p-5 text-left">
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-white/5 text-2xl">
+                {t.icon}
+              </span>
               <div>
-                <div className="font-heading text-sm font-semibold">{t.label}</div>
-                <div className="text-xs text-muted-foreground">{t.desc}</div>
+                <div className="font-heading text-base font-semibold">{t.label}</div>
+                <div className="mt-1 text-sm text-muted-foreground">{t.desc}</div>
               </div>
             </div>
           </RevealItem>
         ))}
       </Reveal>
+      <motion.p
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.8, duration: 0.8 }}
+        className="mt-8 text-left text-sm text-muted-foreground/70"
+      >
+        Por debajo, la misma tecnología de nivel mundial que usan las grandes
+        empresas.
+      </motion.p>
     </SlideShell>
   );
 }
@@ -452,7 +459,7 @@ export function SecuritySlide() {
     <SlideShell center={false}>
       <Kicker>Seguridad</Kicker>
       <SlideTitle className="mt-6 text-left">
-        Protección de <span className="text-gradient">nivel bancario</span>
+        Tus datos, <span className="text-gradient">seguros y protegidos</span>
       </SlideTitle>
       <Reveal className="mt-10 grid gap-4 sm:grid-cols-2">
         {security.map((s) => (
