@@ -42,38 +42,59 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 /* 1 — Portada */
 export function TitleSlide() {
   return (
-    <SlideShell>
-      <Reveal className="flex flex-col items-center gap-8">
-        <RevealItem>
-          <Logo size="lg" />
-        </RevealItem>
-        <RevealItem>
-          <h1 className="font-heading max-w-4xl text-balance text-4xl font-semibold leading-[1.05] tracking-tight md:text-6xl lg:text-7xl">
-            El <span className="text-gradient">sistema operativo</span> de los
-            empresarios colombianos
-          </h1>
-        </RevealItem>
-        <RevealItem>
-          <p className="max-w-2xl text-balance text-lg text-muted-foreground md:text-xl">
-            En {site.company} no desarrollamos software. Creamos soluciones
-            tecnológicas que ayudan a los empresarios a tomar el control de sus
-            negocios y a crecer con confianza.
-          </p>
-        </RevealItem>
-        <RevealItem>
-          <div className="mt-2 flex items-center gap-3 text-sm text-muted-foreground">
-            <span className="glass rounded-full px-3 py-1">
-              por {site.company}
-            </span>
-            <span className="glass rounded-full px-3 py-1">v{site.version}</span>
+    <SlideShell center={false}>
+      <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14">
+        {/* Izquierda: texto */}
+        <Reveal className="flex flex-col items-start gap-7 text-left">
+          <RevealItem>
+            <Logo size="lg" />
+          </RevealItem>
+          <RevealItem>
+            <h1 className="font-heading text-balance text-4xl font-semibold leading-[1.05] tracking-tight md:text-5xl lg:text-6xl">
+              El <span className="text-gradient">sistema operativo</span> de los
+              empresarios colombianos
+            </h1>
+          </RevealItem>
+          <RevealItem>
+            <p className="max-w-xl text-balance text-lg text-muted-foreground">
+              En {site.company} no desarrollamos software. Creamos soluciones
+              tecnológicas que ayudan a los empresarios a tomar el control de sus
+              negocios y a crecer con confianza.
+            </p>
+          </RevealItem>
+          <RevealItem>
+            <div className="flex items-center gap-3 text-sm text-muted-foreground">
+              <span className="glass rounded-full px-3 py-1">
+                por {site.company}
+              </span>
+              <span className="glass rounded-full px-3 py-1">v{site.version}</span>
+            </div>
+          </RevealItem>
+        </Reveal>
+
+        {/* Derecha: QR grande para escanear */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: EASE, delay: 0.4 }}
+          className="flex flex-col items-center"
+        >
+          <div className="rounded-[2rem] bg-white p-6 shadow-[0_30px_80px_-20px_hsl(var(--brand)/0.5)]">
+            <img
+              src="/screens/qr.jpg"
+              alt="Código QR para abrir Ksmart360"
+              className="h-64 w-64 rounded-xl sm:h-72 sm:w-72 lg:h-80 lg:w-80"
+            />
           </div>
-        </RevealItem>
-        <RevealItem>
-          <div className="mt-4 flex items-center gap-2 text-xs text-muted-foreground/70">
-            Usa las flechas <ArrowRight className="h-3.5 w-3.5" /> para avanzar
+          <div className="mt-5 flex items-center gap-2 text-base font-semibold text-foreground">
+            <ScanLine className="h-5 w-5 text-[hsl(var(--brand))]" />
+            Escanéalo y prueba {site.product} gratis
           </div>
-        </RevealItem>
-      </Reveal>
+          <div className="mt-1 text-sm text-muted-foreground">
+            Apunta la cámara de tu celular · {site.url}
+          </div>
+        </motion.div>
+      </div>
     </SlideShell>
   );
 }
