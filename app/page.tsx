@@ -1,7 +1,6 @@
 import { Deck } from "@/components/deck/deck";
 import {
   TitleSlide,
-  SolutionSlide,
   StatsSlide,
   BusinessTypesSlide,
   ModulesSlide,
@@ -19,7 +18,6 @@ import {
   HookSlide,
   ChaosSlide,
   FailureStatsSlide,
-  DianRiskSlide,
   NeedSlide,
   RevealSolutionSlide,
 } from "@/components/deck/slides-intro";
@@ -32,11 +30,9 @@ export default function Home() {
     <HookSlide key="hook" />,
     <ChaosSlide key="chaos" />,
     <FailureStatsSlide key="failure" />,
-    <DianRiskSlide key="dian-risk" />,
     <NeedSlide key="need" />,
     // ── La solución: Ksmart360 ──
     <RevealSolutionSlide key="reveal" />,
-    <SolutionSlide key="solution" />,
     <StatsSlide key="stats" />,
     <BusinessTypesSlide key="types" />,
     <ModulesSlide key="modules" />,

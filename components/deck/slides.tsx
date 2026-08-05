@@ -12,6 +12,7 @@ import {
   Zap,
   ShieldCheck,
   FileCheck2,
+  AlertTriangle,
   Store,
   MessageCircle,
 } from "lucide-react";
@@ -331,41 +332,70 @@ export function CapabilitiesSlide() {
   );
 }
 
-/* 9 — Facturación DIAN */
+/* 9 — Facturación DIAN (problema → solución) */
 export function DianSlide() {
+  const riesgos = [
+    "Multas y sanciones de la DIAN por no facturar",
+    "No le puedes vender a empresas ni al Estado",
+    "Te cierras puertas a créditos y a crecer",
+  ];
+  const soluciones = [
+    "Facturas 100% legales, con su código y su QR",
+    "Sin trámites enredados y sin salir del sistema",
+    "Le vendes a empresas y al Estado con tranquilidad",
+  ];
   return (
-    <SlideShell>
-      <Reveal className="flex flex-col items-center gap-7">
+    <SlideShell center={false}>
+      <div className="flex flex-col items-center text-center">
+        <Kicker>Facturación electrónica DIAN</Kicker>
+        <SlideTitle className="mt-5 max-w-4xl">
+          La factura electrónica{" "}
+          <span className="text-gradient">ya no es tu problema</span>
+        </SlideTitle>
+      </div>
+
+      <Reveal className="mt-10 grid gap-5 md:grid-cols-2">
+        {/* Sin Ksmart360 — el riesgo */}
         <RevealItem>
-          <div className="grid h-16 w-16 place-items-center rounded-2xl border border-white/10 bg-white/5">
-            <FileCheck2 className="h-8 w-8 text-[hsl(var(--brand))]" />
+          <div className="h-full rounded-3xl border border-red-500/20 bg-red-500/[0.04] p-7 text-left">
+            <div className="mb-5 flex items-center gap-3">
+              <span className="grid h-11 w-11 place-items-center rounded-xl border border-red-500/30 bg-red-500/10">
+                <AlertTriangle className="h-6 w-6 text-red-400" />
+              </span>
+              <h3 className="font-heading text-lg font-semibold text-red-400">
+                Vender sin factura te cuesta caro
+              </h3>
+            </div>
+            <ul className="space-y-3">
+              {riesgos.map((r) => (
+                <li key={r} className="flex items-start gap-3 text-[15px] text-foreground/85">
+                  <span className="mt-0.5 text-red-400">⚠️</span>
+                  {r}
+                </li>
+              ))}
+            </ul>
           </div>
         </RevealItem>
+
+        {/* Con Ksmart360 — la solución */}
         <RevealItem>
-          <Kicker>Cumplimiento Colombia</Kicker>
-        </RevealItem>
-        <RevealItem>
-          <SlideTitle className="max-w-4xl">
-            Facturación electrónica{" "}
-            <span className="text-gradient">DIAN, integrada</span>
-          </SlideTitle>
-        </RevealItem>
-        <RevealItem>
-          <p className="max-w-2xl text-balance text-lg text-muted-foreground md:text-xl">
-            Emite facturas 100% legales ante la DIAN, con su código y su QR, sin
-            salir del sistema y sin trámites enredados. Le vendes a empresas y al
-            Estado con tranquilidad.
-          </p>
-        </RevealItem>
-        <RevealItem>
-          <div className="flex flex-wrap justify-center gap-3">
-            {["Factura legal DIAN", "Con código y QR", "Sin trámites enredados", "Le vendes a quien sea"].map(
-              (t) => (
-                <span key={t} className="glass rounded-full px-4 py-2 text-sm">
-                  {t}
-                </span>
-              )
-            )}
+          <div className="h-full rounded-3xl border border-[hsl(var(--brand)/0.3)] bg-[hsl(var(--brand)/0.06)] p-7 text-left">
+            <div className="mb-5 flex items-center gap-3">
+              <span className="grid h-11 w-11 place-items-center rounded-xl border border-[hsl(var(--brand)/0.3)] bg-[hsl(var(--brand)/0.12)]">
+                <FileCheck2 className="h-6 w-6 text-[hsl(var(--brand))]" />
+              </span>
+              <h3 className="font-heading text-lg font-semibold text-[hsl(var(--brand))]">
+                Con Ksmart360, resuelto
+              </h3>
+            </div>
+            <ul className="space-y-3">
+              {soluciones.map((s) => (
+                <li key={s} className="flex items-start gap-3 text-[15px] text-foreground/85">
+                  <span className="mt-0.5 text-[hsl(var(--brand))]">✓</span>
+                  {s}
+                </li>
+              ))}
+            </ul>
           </div>
         </RevealItem>
       </Reveal>
