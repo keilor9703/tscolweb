@@ -19,9 +19,7 @@ import {
   HookSlide,
   ChaosSlide,
   FailureStatsSlide,
-  PainTodaySlide,
   DianRiskSlide,
-  ReframeSlide,
   NeedSlide,
   RevealSolutionSlide,
 } from "@/components/deck/slides-intro";
@@ -34,9 +32,7 @@ export default function Home() {
     <HookSlide key="hook" />,
     <ChaosSlide key="chaos" />,
     <FailureStatsSlide key="failure" />,
-    <PainTodaySlide key="pain" />,
     <DianRiskSlide key="dian-risk" />,
-    <ReframeSlide key="reframe" />,
     <NeedSlide key="need" />,
     // ── La solución: Ksmart360 ──
     <RevealSolutionSlide key="reveal" />,

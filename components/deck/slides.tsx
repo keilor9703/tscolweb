@@ -705,35 +705,61 @@ export function StepsSlide() {
 /* 15 — Cierre */
 export function CloseSlide() {
   return (
-    <SlideShell>
-      <Reveal className="flex flex-col items-center gap-8">
-        <RevealItem>
-          <Logo size="lg" />
-        </RevealItem>
-        <RevealItem>
-          <h2 className="font-heading max-w-4xl text-balance text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
-            Tu negocio, en orden,{" "}
-            <span className="text-gradient">desde el primer día</span>
-          </h2>
-        </RevealItem>
-        <RevealItem>
-          <div className="flex flex-col items-center gap-4 sm:flex-row">
-            <span className="inline-flex items-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-base font-medium text-background">
-              <ShieldCheck className="h-5 w-5" />
-              Prueba gratis 14 días
-            </span>
-            <span className="glass inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-base font-medium">
-              <ScanLine className="h-5 w-5 text-[hsl(var(--brand))]" />
-              {site.url}
-            </span>
+    <SlideShell center={false}>
+      <div className="grid items-center gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-14">
+        {/* Izquierda: mensaje y CTA */}
+        <Reveal className="flex flex-col items-start gap-7 text-left">
+          <RevealItem>
+            <Logo size="lg" />
+          </RevealItem>
+          <RevealItem>
+            <h2 className="font-heading text-balance text-4xl font-semibold leading-tight tracking-tight md:text-5xl lg:text-6xl">
+              Tu negocio, en orden,{" "}
+              <span className="text-gradient">desde el primer día</span>
+            </h2>
+          </RevealItem>
+          <RevealItem>
+            <p className="max-w-md text-lg text-muted-foreground">
+              Dejemos de trabajar a ciegas. Escanea el código, pruébalo gratis y
+              da el primer paso hoy.
+            </p>
+          </RevealItem>
+          <RevealItem>
+            <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
+              <span className="inline-flex items-center gap-2 rounded-full bg-foreground px-7 py-3.5 text-base font-medium text-background">
+                <ShieldCheck className="h-5 w-5" />
+                Prueba gratis 14 días
+              </span>
+              <span className="text-sm text-muted-foreground">
+                {site.product} · por {site.company}
+              </span>
+            </div>
+          </RevealItem>
+        </Reveal>
+
+        {/* Derecha: QR grande */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9, y: 20 }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: EASE, delay: 0.4 }}
+          className="flex flex-col items-center"
+        >
+          <div className="rounded-[2rem] bg-white p-6 shadow-[0_30px_80px_-20px_hsl(var(--brand)/0.5)]">
+            <img
+              src="/screens/qr.jpg"
+              alt="Código QR para abrir Ksmart360"
+              className="h-64 w-64 rounded-xl sm:h-72 sm:w-72 lg:h-80 lg:w-80"
+            />
           </div>
-        </RevealItem>
-        <RevealItem>
-          <p className="text-sm text-muted-foreground">
-            {site.product} · un producto de {site.company}
-          </p>
-        </RevealItem>
-      </Reveal>
+          <div className="mt-5 flex items-center gap-2 text-base font-semibold text-foreground">
+            <ScanLine className="h-5 w-5 text-[hsl(var(--brand))]" />
+            Escanéalo y empieza hoy
+          </div>
+          <div className="mt-1 text-sm text-muted-foreground">
+            Apunta la cámara de tu celular · {site.url}
+          </div>
+        </motion.div>
+      </div>
     </SlideShell>
   );
 }
