@@ -403,48 +403,63 @@ export function DianSlide() {
   );
 }
 
-/* 10 — Catálogo virtual */
+/* 10 — Captar más clientes (catálogo, agendamiento, centro comercial) */
 export function CatalogSlide() {
+  const tools = [
+    {
+      icon: "🛍️",
+      name: "Catálogo virtual",
+      desc: "Tu tienda online con enlace propio. El cliente arma su pedido y te llega al WhatsApp y al sistema, con el inventario siempre al día.",
+    },
+    {
+      icon: "📅",
+      name: "Agendamiento de citas",
+      desc: "Tus clientes ven tus servicios y reservan una cita por horario. La cita entra al sistema y tú planeas tu día, tu semana y tu operación.",
+    },
+    {
+      icon: "🏬",
+      name: "Centro comercial virtual",
+      desc: "Todas las empresas de Ksmart360 en un mismo lugar. El cliente entra a cualquier tienda, mira productos y hace pedidos — incluso combinando varias.",
+    },
+  ];
   return (
     <SlideShell center={false}>
-      <div className="grid items-center gap-12 lg:grid-cols-2">
-        <div className="text-left">
-          <Kicker>Vende también online</Kicker>
-          <SlideTitle className="mt-6">
-            Un <span className="text-gradient">catálogo virtual</span> que recibe
-            pedidos por WhatsApp
-          </SlideTitle>
-          <p className="mt-5 max-w-xl text-lg text-muted-foreground">
-            Cada empresa tiene su tienda online con URL propia. El cliente arma
-            el carrito y el pedido llega a tu WhatsApp y al sistema, con el stock
-            siempre sincronizado.
-          </p>
-          <div className="mt-7 flex flex-wrap gap-3">
-            {[
-              { icon: Store, t: "URL única por empresa" },
-              { icon: MessageCircle, t: "Pedidos a WhatsApp" },
-              { icon: Zap, t: "Stock sincronizado" },
-            ].map((f) => (
-              <span
-                key={f.t}
-                className="glass inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm"
-              >
-                <f.icon className="h-4 w-4 text-[hsl(var(--brand))]" />
-                {f.t}
-              </span>
-            ))}
-          </div>
+      <div className="flex flex-col items-center text-center">
+        <Kicker>Más clientes</Kicker>
+        <SlideTitle className="mt-5 max-w-4xl">
+          Te ayudamos a captar{" "}
+          <span className="text-gradient">más clientes</span>
+        </SlideTitle>
+        <p className="mt-3 max-w-2xl text-muted-foreground">
+          Tres formas de que más gente te encuentre, te compre y vuelva.
+        </p>
+      </div>
+
+      <Reveal className="mt-9 grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+        {/* Izquierda: las 3 herramientas */}
+        <div className="space-y-3.5">
+          {tools.map((t) => (
+            <RevealItem key={t.name}>
+              <div className="card-glow flex items-start gap-4 rounded-2xl p-5 text-left">
+                <span className="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-white/5 text-2xl">
+                  {t.icon}
+                </span>
+                <div>
+                  <h3 className="font-heading text-lg font-semibold">{t.name}</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+                    {t.desc}
+                  </p>
+                </div>
+              </div>
+            </RevealItem>
+          ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, scale: 0.96, y: 20 }}
-          animate={{ opacity: 1, scale: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: EASE, delay: 0.2 }}
-          className="relative"
-        >
+        {/* Derecha: captura real del catálogo */}
+        <RevealItem className="relative">
           <StoreShowcase />
-        </motion.div>
-      </div>
+        </RevealItem>
+      </Reveal>
     </SlideShell>
   );
 }
@@ -470,7 +485,7 @@ function StoreShowcase() {
           </span>
         </div>
 
-        <div className="max-h-[52vh] overflow-hidden">
+        <div className="max-h-[42vh] overflow-hidden">
           {mainErr ? (
             /* Respaldo: mock del catálogo */
             <div className="p-6">

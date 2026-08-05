@@ -136,11 +136,17 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 13. *Tu tienda en internet, con pedidos por WhatsApp*
-> "Además, tu negocio puede vender **por internet**. Miren: esta es una tienda
-> real hecha con Ksmart360. El cliente entra, arma su pedido, y te llega
-> **directo al WhatsApp** y al sistema, con el inventario siempre al día. Vendes
-> hasta durmiendo."
+### 13. *Te ayudamos a captar más clientes*
+> "Y no solo les ayudamos a ordenar el negocio: les ayudamos a **conseguir más
+> clientes**, de tres formas. **Uno, el catálogo virtual:** tu tienda en internet
+> con un enlace propio; el cliente arma su pedido y te llega directo al WhatsApp,
+> con el inventario al día —miren, esta es una tienda real—. **Dos, el
+> agendamiento de citas:** tus clientes ven tus servicios y **reservan una cita
+> por horario**; esa cita entra al sistema y tú planeas tu día, tu semana, tu
+> operación. Y **tres, el centro comercial virtual:** todas las empresas que usan
+> Ksmart360 aparecen juntas, cada una con su tienda, y una persona puede entrar,
+> mirar productos y pedir en cualquiera… **incluso combinando varias tiendas**.
+> Le damos **visibilidad** a tu negocio."
 
 ▶ (avanza)
 
@@ -207,7 +213,7 @@ Aprende **solo estas frases ancla**; el resto sale solo:
 10. **Diferencia:** "Escaneas y listo. Entras con tu huella. Contabilidad sola."
 11. **Todo junto:** "Todo en **un solo lugar**, ordenado."
 12. **DIAN:** "Vender sin factura te cierra puertas. Con Ksmart360, **resuelto**."
-13. **Tienda online:** "Vende por WhatsApp, hasta durmiendo."
+13. **Más clientes:** "Catálogo virtual, agendamiento de citas y centro comercial virtual. Te damos **visibilidad**."
 14. **Tecnología:** "Tú vendes; de la tecnología **nos encargamos nosotros**."
 15. **Seguridad:** "Tus datos son **solo tuyos**."
 16. **Precio:** "Desde $29.900. Pruébalo **gratis**."
