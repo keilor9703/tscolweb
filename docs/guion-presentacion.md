@@ -3,8 +3,8 @@
 **Público:** +25 empresarios y emprendedores de Cali (personas del común, sin
 conocimientos técnicos).
 **Objetivo:** que entiendan, sin enredos, por qué Ksmart360 les conviene.
-**Duración estimada:** 8–11 minutos (avanzas una diapositiva por bloque).
-**Total: 18 diapositivas.**
+**Duración estimada:** 7–10 minutos (avanzas una diapositiva por bloque).
+**Total: 16 diapositivas.**
 
 ---
 
@@ -16,7 +16,7 @@ conocimientos técnicos).
 - Cuando hagas una **pregunta**, quédate callado 2–3 segundos. Deja que piensen.
 - Usa tu propia historia y ejemplos de Cali. Lo de abajo es una base, no un libreto rígido.
 - El símbolo **▶ (avanza)** te indica cuándo pasar a la siguiente diapositiva.
-- **El QR** aparece en la **portada (1)** y en el **cierre (18)**: invítalos a
+- **El QR** aparece en la **portada (1)** y en el **cierre (16)**: invítalos a
   escanearlo en ambos momentos.
 
 ---
@@ -74,58 +74,43 @@ conocimientos técnicos).
 ▶ (avanza)
 
 ### 6. *Esa herramienta existe → Ksmart360*
-> "Pues esa herramienta **existe**. Y se llama **Ksmart360**. Es el sistema que
-> pone tu negocio en orden y bajo control desde el primer día. Y no es un invento
-> nuevo sin probar; déjenme mostrarles."
+> "Pues esa herramienta **existe**. Y se llama **Ksmart360**. Es un **solo
+> sistema** que pone tu negocio en orden y bajo control desde el primer día. Y no
+> es un invento nuevo sin probar: ya lo usan **más de 30 negocios reales** en
+> Colombia, todos los días. Déjenme mostrarles."
 
 ▶ (avanza)
 
-### 7. *En producción (los números)*
-> "Esto ya está funcionando: **más de 18 herramientas** dentro del sistema,
-> **5 tipos de negocio**, **más de 30 empresas** usándolo todos los días, y
-> prácticamente **siempre disponible**. Es un sistema **probado**, con negocios
-> reales de Colombia. Es un solo sistema donde cabe **todo** tu negocio."
+### 7. *Un sistema, cinco negocios*
+> "Lo primero: se adapta a **tu** negocio. ¿Tienes una tienda, un mercado, una
+> ferretería? Listo. ¿Un parqueadero? También. ¿Un lavadero de carros? ¿Un
+> restaurante o una cafetería? También. Tú eliges tu tipo de negocio y el sistema
+> **prende solo** las herramientas que tú necesitas. Nada de cosas que no usas."
 
 ▶ (avanza)
 
-### 8. *Un sistema, cinco negocios*
-> "Y se adapta a **tu** negocio. ¿Tienes una tienda, un mercado, una ferretería?
-> Listo. ¿Un parqueadero? También. ¿Un lavadero de carros? ¿Un restaurante o una
-> cafetería? También. Tú eliges tu tipo de negocio y el sistema **prende solo**
-> las herramientas que tú necesitas. Nada de cosas que no usas."
+### 8. *Detalles que marcan la diferencia*
+> "Y hace de todo, con detalles pensados para el día a día: vendes con un punto de
+> venta que funciona con lector o con la **cámara del celular**; registras un
+> producto **con solo escanearlo** —el nombre y la foto se cargan solos—; premias
+> a tus clientes con **puntos** para que vuelvan; entras con **tu huella o tu
+> rostro**, como en el banco; y tu **contabilidad se arma sola**, sin pagar un
+> contador para lo básico."
 
 ▶ (avanza)
 
-### 9. *Cuatro pilares, un solo flujo* (módulos)
-> "En el corazón hay cuatro cosas. **Uno, las ventas:** un punto de venta que
-> funciona con lector o con la cámara del celular, y recibe efectivo, Nequi,
-> tarjeta… **Dos, el inventario:** se cuadra solo, y te avisa cuando algo se está
-> agotando. **Tres, tus finanzas:** ves cuánto vendiste y cuánto ganaste, sin ser
-> contador. Y **cuatro, tu tienda online**, para vender por WhatsApp."
->
-> *(La pantalla va cambiando sola entre los cuatro. Puedes tocar cada uno.)*
-
-▶ (avanza)
-
-### 10. *Detalles que marcan la diferencia*
-> "Y trae detalles pensados para el día a día: registras un producto **con solo
-> escanearlo** —el nombre y la foto se cargan solos—; premias a tus clientes con
-> **puntos** para que vuelvan; entras al sistema con **tu huella o tu rostro**,
-> como en el banco; y tu **contabilidad se arma sola**, sin que tengas que pagar
-> un contador para lo básico."
-
-▶ (avanza)
-
-### 11. *Todo tu negocio, en un solo lugar*
+### 9. *Todo tu negocio, en un solo lugar*
 > "Aquí ven todo lo que hace, organizado: ventas, inventario, clientes y cobros,
-> y tus reportes. Todo lo que hoy hacen en cuadernos, en Excel, o en la cabeza…
-> aquí queda **en un solo lugar y ordenado**."
+> y tus reportes. Tu inventario se cuadra solo y te avisa cuando algo se está
+> agotando; ves cuánto vendiste y cuánto ganaste en el día. Todo lo que hoy hacen
+> en cuadernos, en Excel, o en la cabeza… aquí queda **en un solo lugar y
+> ordenado**."
 
 *(No leas la lista completa. Señala 2–3 cosas y sigue.)*
 
 ▶ (avanza)
 
-### 12. *La factura electrónica ya no es tu problema* (DIAN)
+### 10. *La factura electrónica ya no es tu problema* (DIAN)
 > "Y hablemos de algo que a muchos les quita el sueño: **la DIAN**. Miren la
 > izquierda: vender sin factura electrónica **te cuesta caro** — multas, y te
 > cierra puertas: no le puedes vender a empresas ni al Estado, no accedes a
@@ -136,7 +121,7 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 13. *Te ayudamos a captar más clientes*
+### 11. *Te ayudamos a captar más clientes*
 > "Y no solo les ayudamos a ordenar el negocio: les ayudamos a **conseguir más
 > clientes**, de tres formas. **Uno, el catálogo virtual:** tu tienda en internet
 > con un enlace propio; el cliente arma su pedido y te llega directo al WhatsApp,
@@ -150,7 +135,7 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 14. *De la tecnología nos encargamos nosotros*
+### 12. *De la tecnología nos encargamos nosotros*
 > "Y sé lo que algunos están pensando: *'esto suena complicado, yo no soy de
 > tecnología'*. Tranquilos. **Ustedes se dedican a vender; de la tecnología nos
 > encargamos nosotros.** Tu información vive segura en la nube: aunque se te dañe
@@ -159,7 +144,7 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 15. *Tus datos, seguros y protegidos*
+### 13. *Tus datos, seguros y protegidos*
 > "Y su información está **protegida**. Los datos de tu negocio son **solo tuyos**,
 > nadie más los ve. Entras con tu huella. Tú decides qué ve cada empleado. Y todo
 > viaja cifrado, igual que en la banca en línea. Con la misma seriedad de un
@@ -167,7 +152,7 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 16. *Desde $29.900 al mes*
+### 14. *Desde $29.900 al mes*
 > "¿Y esto cuánto vale? Menos de lo que muchos gastan en un almuerzo a la semana.
 > Desde **$29.900 al mes**. Y si pagas **trimestral ahorras 10%**, o **anual
 > ahorras 20%**. *(Toca el selector para mostrarlo.)* Y lo mejor: pueden
@@ -176,7 +161,7 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 17. *Operando el mismo día*
+### 15. *Operando el mismo día*
 > "Y empezar es facilísimo. **Uno:** te registras en 2 minutos y eliges tu tipo de
 > negocio. **Dos:** cargas tus productos escaneándolos con el celular. **Tres:**
 > empiezas a vender **el mismo día**. Con soporte incluido. No hay que esperar
@@ -184,7 +169,7 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 18. *Tu negocio, en orden, desde el primer día* (cierre + QR)
+### 16. *Tu negocio, en orden, desde el primer día* (cierre + QR)
 > "Yo empecé preguntándoles si tenían el **control** de su negocio. Hoy quiero
 > dejarles una invitación: **dejemos de trabajar a ciegas.** Su esfuerzo y sus
 > ganas merecen un negocio ordenado, que crezca con confianza. Eso es Ksmart360.
@@ -206,19 +191,17 @@ Aprende **solo estas frases ancla**; el resto sale solo:
 3. **¿Te suena?:** "Levanten la mano si les cuesta responder esto."
 4. **Cifras:** "7 de cada 10 cierran. No por falta de ventas, por trabajar **a ciegas**."
 5. **Necesitas:** "Ver tus números, tu inventario, cumplir la DIAN, y que sea fácil."
-6. **Reveal:** "Esa herramienta existe: **Ksmart360**."
-7. **Números:** "Ya funciona, en +30 negocios reales. Un solo sistema."
-8. **5 negocios:** "Se adapta a **tu** negocio."
-9. **Módulos:** "Ventas, inventario, finanzas y tu tienda online."
-10. **Diferencia:** "Escaneas y listo. Entras con tu huella. Contabilidad sola."
-11. **Todo junto:** "Todo en **un solo lugar**, ordenado."
-12. **DIAN:** "Vender sin factura te cierra puertas. Con Ksmart360, **resuelto**."
-13. **Más clientes:** "Catálogo virtual, agendamiento de citas y centro comercial virtual. Te damos **visibilidad**."
-14. **Tecnología:** "Tú vendes; de la tecnología **nos encargamos nosotros**."
-15. **Seguridad:** "Tus datos son **solo tuyos**."
-16. **Precio:** "Desde $29.900. Pruébalo **gratis**."
-17. **Empezar:** "Operando **el mismo día**."
-18. **Cierre:** "Dejemos de trabajar a ciegas. **Escaneen el QR** y empiecen hoy."
+6. **Reveal:** "Esa herramienta existe: **Ksmart360**. Ya la usan +30 negocios."
+7. **5 negocios:** "Se adapta a **tu** negocio."
+8. **Detalles:** "Escaneas y listo. Entras con tu huella. Contabilidad sola."
+9. **Todo junto:** "Todo en **un solo lugar**, ordenado."
+10. **DIAN:** "Vender sin factura te cierra puertas. Con Ksmart360, **resuelto**."
+11. **Más clientes:** "Catálogo, agendamiento y centro comercial. Te damos **visibilidad**."
+12. **Tecnología:** "Tú vendes; de la tecnología **nos encargamos nosotros**."
+13. **Seguridad:** "Tus datos son **solo tuyos**."
+14. **Precio:** "Desde $29.900. Pruébalo **gratis**."
+15. **Empezar:** "Operando **el mismo día**."
+16. **Cierre:** "Dejemos de trabajar a ciegas. **Escaneen el QR** y empiecen hoy."
 
 ---
 
@@ -229,7 +212,7 @@ Aprende **solo estas frases ancla**; el resto sale solo:
 - **Cuenta una historia real:** si conoces el caso de un tendero de Cali al que
   Ksmart360 le cambió el negocio, cuéntalo entre la diapositiva 6 y la 8. Vende
   más una historia que diez funciones.
-- **No leas las listas** de las diapositivas densas (11). Señala 2–3 cosas.
+- **No leas las listas** de las diapositivas densas (9). Señala 2–3 cosas.
 - **El QR es tu mejor aliado:** recuérdalo al inicio y déjalo fijo al final. Es
   lo que convierte "me gustó" en "lo voy a probar".
 - **El cierre es lo que más recuerdan.** Termina con energía y con una acción

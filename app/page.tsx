@@ -1,9 +1,7 @@
 import { Deck } from "@/components/deck/deck";
 import {
   TitleSlide,
-  StatsSlide,
   BusinessTypesSlide,
-  ModulesSlide,
   DifferentiatorsSlide,
   CapabilitiesSlide,
   DianSlide,
@@ -33,9 +31,7 @@ export default function Home() {
     <NeedSlide key="need" />,
     // ── La solución: Ksmart360 ──
     <RevealSolutionSlide key="reveal" />,
-    <StatsSlide key="stats" />,
     <BusinessTypesSlide key="types" />,
-    <ModulesSlide key="modules" />,
     <DifferentiatorsSlide key="diff" />,
     <CapabilitiesSlide key="caps" />,
     <DianSlide key="dian" />,
