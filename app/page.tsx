@@ -32,6 +32,7 @@ export default function Home() {
     // ── La solución: Ksmart360 ──
     <RevealSolutionSlide key="reveal" />,
     <BusinessTypesSlide key="types" />,
+    <RolesSlide key="roles" />,
     <DifferentiatorsSlide key="diff" />,
     <CatalogSlide key="catalog" />,
     <CapabilitiesSlide key="caps" />,
@@ -39,7 +40,6 @@ export default function Home() {
     <TechSlide key="tech" />,
     <SecuritySlide key="security" />,
     <PlansSlide key="plans" />,
-    <RolesSlide key="roles" />,
     <CloseSlide key="close" />,
   ];
 

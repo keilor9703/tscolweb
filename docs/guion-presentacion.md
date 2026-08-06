@@ -89,7 +89,18 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 8. *Detalles que marcan la diferencia*
+### 8. *Delega con confianza* (roles / administración)
+> "Y algo clave para el que tiene empleados: **no tienes que estar en todo**. Con
+> Ksmart360 tú decides qué puede ver y hacer cada persona de tu equipo. Creas
+> **roles por funciones**: uno solo vende, otro maneja el inventario, otro la
+> caja — cada quien entra únicamente a lo suyo. ¿Tienes un empleado temporal? Le
+> das acceso **con fecha de vencimiento** y el sistema lo desactiva solo cuando
+> llega el día. Tú siempre al mando, delegando con **confianza** y con tu
+> información protegida."
+
+▶ (avanza)
+
+### 9. *Detalles que marcan la diferencia*
 > "Y hace de todo, con detalles pensados para el día a día. Su corazón son las
 > **ventas**: un punto de venta **ágil e intuitivo**, con el que registras cada
 > venta en segundos y cobras con **varios métodos de pago** —efectivo, Nequi,
@@ -99,7 +110,7 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 9. *Te ayudamos a captar más clientes*
+### 10. *Te ayudamos a captar más clientes*
 > "Y no solo les ayudamos a ordenar el negocio: les ayudamos a **conseguir más
 > clientes**, de tres formas. **Uno, el catálogo virtual:** tu tienda en internet
 > con un enlace propio; el cliente arma su pedido y te llega directo al WhatsApp,
@@ -113,7 +124,7 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 10. *Todo tu negocio, en un solo lugar*
+### 11. *Todo tu negocio, en un solo lugar*
 > "Y todo esto queda organizado en un solo lugar: ventas, inventario, clientes y
 > cobros, y tus reportes. Tu inventario se cuadra solo y te avisa cuando algo se
 > está agotando; ves cuánto vendiste y cuánto ganaste en el día. Todo lo que hoy
@@ -123,7 +134,7 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 11. *La factura electrónica ya no es tu problema* (DIAN)
+### 12. *La factura electrónica ya no es tu problema* (DIAN)
 > "Y hablemos de algo que a muchos les quita el sueño: **la DIAN**. Miren la
 > izquierda: vender sin factura electrónica **te cuesta caro** — multas, y te
 > cierra puertas: no le puedes vender a empresas ni al Estado, no accedes a
@@ -134,7 +145,7 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 12. *De la tecnología nos encargamos nosotros*
+### 13. *De la tecnología nos encargamos nosotros*
 > "Y sé lo que algunos están pensando: *'esto suena complicado, yo no soy de
 > tecnología'*. Tranquilos. **Ustedes se dedican a vender; de la tecnología nos
 > encargamos nosotros.** Tu información vive segura en la nube: aunque se te dañe
@@ -143,30 +154,19 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 13. *Tus datos, seguros y protegidos*
+### 14. *Tus datos, seguros y protegidos*
 > "Y su información está **protegida**. Los datos de tu negocio son **solo tuyos**,
 > nadie más los ve. Todo viaja cifrado, igual que en la banca en línea. Con la
 > misma seriedad de un banco."
 
 ▶ (avanza)
 
-### 14. *Desde $29.900 al mes*
+### 15. *Desde $29.900 al mes*
 > "¿Y esto cuánto vale? Menos de lo que muchos gastan en un almuerzo a la semana.
 > Desde **$29.900 al mes**. Y si pagas **trimestral ahorras 10%**, o **anual
 > ahorras 20%**. *(Toca el selector para mostrarlo.)* Y lo mejor: pueden
 > **probarlo gratis 14 días**, sin tarjeta, sin compromiso. El plan más elegido
 > ya incluye la factura electrónica."
-
-▶ (avanza)
-
-### 15. *Delega con confianza* (roles / administración)
-> "Y algo clave para el que tiene empleados: **no tienes que estar en todo**. Con
-> Ksmart360 tú decides qué puede ver y hacer cada persona de tu equipo. Creas
-> **roles por funciones**: uno solo vende, otro maneja el inventario, otro la
-> caja — cada quien entra únicamente a lo suyo. ¿Tienes un empleado temporal? Le
-> das acceso **con fecha de vencimiento** y el sistema lo desactiva solo cuando
-> llega el día. Tú siempre al mando, delegando con **confianza** y con tu
-> información protegida."
 
 ▶ (avanza)
 
@@ -194,14 +194,14 @@ Aprende **solo estas frases ancla**; el resto sale solo:
 5. **Necesitas:** "Ver tus números, tu inventario, cumplir la DIAN, y que sea fácil."
 6. **Reveal:** "Esa herramienta existe: **Ksmart360**. Ya la usan +30 negocios."
 7. **5 negocios:** "Se adapta a **tu** negocio."
-8. **Detalles:** "Ventas ágiles con varios métodos de pago. Huella. Contabilidad sola."
-9. **Más clientes:** "Catálogo, agendamiento y centro comercial. Te damos **visibilidad**."
-10. **Todo junto:** "Todo en **un solo lugar**, ordenado."
-11. **DIAN:** "Vender sin factura te cierra puertas. Con Ksmart360, **resuelto**."
-12. **Tecnología:** "Tú vendes; de la tecnología **nos encargamos nosotros**."
-13. **Seguridad:** "Tus datos son **solo tuyos**."
-14. **Precio:** "Desde $29.900. Pruébalo **gratis**."
-15. **Delega:** "No tienes que estar en todo. **Roles por funciones**, delega con confianza."
+8. **Delega:** "No tienes que estar en todo. **Roles por funciones**, delega con confianza."
+9. **Detalles:** "Ventas ágiles con varios métodos de pago. Huella. Contabilidad sola."
+10. **Más clientes:** "Catálogo, agendamiento y centro comercial. Te damos **visibilidad**."
+11. **Todo junto:** "Todo en **un solo lugar**, ordenado."
+12. **DIAN:** "Vender sin factura te cierra puertas. Con Ksmart360, **resuelto**."
+13. **Tecnología:** "Tú vendes; de la tecnología **nos encargamos nosotros**."
+14. **Seguridad:** "Tus datos son **solo tuyos**."
+15. **Precio:** "Desde $29.900. Pruébalo **gratis**."
 16. **Cierre:** "Dejemos de trabajar a ciegas. **Escaneen el QR** y empiecen hoy."
 
 ---
@@ -211,7 +211,7 @@ Aprende **solo estas frases ancla**; el resto sale solo:
 - **Involúcralos:** las preguntas ("¿les suena?", "levanten la mano") valen oro.
   Convierten un discurso en una conversación.
 - **Cuenta una historia real:** si conoces el caso de un tendero de Cali al que
-  Ksmart360 le cambió el negocio, cuéntalo entre la diapositiva 6 y la 8. Vende
+  Ksmart360 le cambió el negocio, cuéntalo entre la diapositiva 6 y la 9. Vende
   más una historia que diez funciones.
 - **No leas las listas** de las diapositivas densas. Señala 2–3 cosas.
 - **El QR es tu mejor aliado:** recuérdalo al inicio y déjalo fijo al final. Es
