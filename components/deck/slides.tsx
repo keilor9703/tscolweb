@@ -26,7 +26,6 @@ import {
   security,
   planPricing,
   billingPeriods,
-  onboardingSteps,
 } from "@/lib/deck-data";
 import {
   SlideShell,
@@ -718,26 +717,47 @@ export function PlansSlide() {
   );
 }
 
-/* 14 — Cómo empezar */
-export function StepsSlide() {
+/* 14 — Delega con confianza (roles / administración) */
+export function RolesSlide() {
+  const points = [
+    {
+      icon: "👥",
+      title: "Roles por funciones",
+      desc: "Crea perfiles a la medida: uno solo vende, otro maneja el inventario, otro la caja. Cada persona entra únicamente a lo que le corresponde.",
+    },
+    {
+      icon: "📅",
+      title: "Vigencia por fecha",
+      desc: "¿Un empleado temporal? Le das acceso con fecha de vencimiento y el sistema lo desactiva solo cuando llega el día. Sin que tengas que acordarte.",
+    },
+    {
+      icon: "🔐",
+      title: "Tú siempre al mando",
+      desc: "Cambias los permisos cuando quieras. Delegas con tranquilidad y tu información sensible queda protegida de miradas indiscretas.",
+    },
+  ];
   return (
     <SlideShell center={false}>
-      <Kicker>Cómo empezar</Kicker>
-      <SlideTitle className="mt-6 text-left">
-        Operando <span className="text-gradient">el mismo día</span>
-      </SlideTitle>
-      <Reveal className="mt-12 grid gap-6 md:grid-cols-3">
-        {onboardingSteps.map((s) => (
-          <RevealItem key={s.step}>
-            <div className="text-left">
-              <div className="font-heading text-5xl font-bold text-[hsl(var(--brand)/0.4)]">
-                {s.step}
-              </div>
-              <h3 className="font-heading mt-3 text-xl font-semibold">
-                {s.title}
+      <div className="flex flex-col items-center text-center">
+        <Kicker>Módulo de administración</Kicker>
+        <SlideTitle className="mt-5 max-w-4xl">
+          Delega con <span className="text-gradient">confianza</span>
+        </SlideTitle>
+        <p className="mt-3 max-w-2xl text-muted-foreground">
+          No tienes que estar en todo. Tú decides qué puede ver y hacer cada
+          persona de tu equipo.
+        </p>
+      </div>
+      <Reveal className="mt-10 grid gap-4 md:grid-cols-3">
+        {points.map((p) => (
+          <RevealItem key={p.title}>
+            <div className="card-glow h-full rounded-2xl p-6 text-left">
+              <div className="text-3xl">{p.icon}</div>
+              <h3 className="font-heading mt-4 text-lg font-semibold">
+                {p.title}
               </h3>
-              <p className="mt-2 text-[15px] leading-relaxed text-muted-foreground">
-                {s.desc}
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                {p.desc}
               </p>
             </div>
           </RevealItem>

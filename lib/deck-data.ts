@@ -88,9 +88,9 @@ export const businessTypes = [
 
 export const differentiators = [
   {
-    icon: "📷",
-    title: "POS con cámara o lector",
-    desc: "Vende con lector de barras USB o con la cámara del celular. Sin comprar hardware obligatorio.",
+    icon: "🛒",
+    title: "Ventas rápidas e intuitivas",
+    desc: "Un punto de venta ágil y fácil de usar. Registras cada venta en segundos y cobras con varios métodos de pago —efectivo, Nequi, tarjeta— en una sola transacción.",
   },
   {
     icon: "🌍",

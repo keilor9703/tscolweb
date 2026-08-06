@@ -90,38 +90,16 @@ conocimientos técnicos).
 ▶ (avanza)
 
 ### 8. *Detalles que marcan la diferencia*
-> "Y hace de todo, con detalles pensados para el día a día: vendes con un punto de
-> venta que funciona con lector o con la **cámara del celular**; registras un
-> producto **con solo escanearlo** —el nombre y la foto se cargan solos—; premias
-> a tus clientes con **puntos** para que vuelvan; entras con **tu huella o tu
-> rostro**, como en el banco; y tu **contabilidad se arma sola**, sin pagar un
-> contador para lo básico."
+> "Y hace de todo, con detalles pensados para el día a día. Su corazón son las
+> **ventas**: un punto de venta **ágil e intuitivo**, con el que registras cada
+> venta en segundos y cobras con **varios métodos de pago** —efectivo, Nequi,
+> tarjeta— en una sola transacción. Además, premias a tus clientes con **puntos**
+> para que vuelvan; entras con **tu huella o tu rostro**, como en el banco; y tu
+> **contabilidad se arma sola**, sin pagar un contador para lo básico."
 
 ▶ (avanza)
 
-### 9. *Todo tu negocio, en un solo lugar*
-> "Aquí ven todo lo que hace, organizado: ventas, inventario, clientes y cobros,
-> y tus reportes. Tu inventario se cuadra solo y te avisa cuando algo se está
-> agotando; ves cuánto vendiste y cuánto ganaste en el día. Todo lo que hoy hacen
-> en cuadernos, en Excel, o en la cabeza… aquí queda **en un solo lugar y
-> ordenado**."
-
-*(No leas la lista completa. Señala 2–3 cosas y sigue.)*
-
-▶ (avanza)
-
-### 10. *La factura electrónica ya no es tu problema* (DIAN)
-> "Y hablemos de algo que a muchos les quita el sueño: **la DIAN**. Miren la
-> izquierda: vender sin factura electrónica **te cuesta caro** — multas, y te
-> cierra puertas: no le puedes vender a empresas ni al Estado, no accedes a
-> créditos. *(pausa)* Ahora la derecha: con **Ksmart360 eso está resuelto**.
-> Emites facturas **100% legales**, con su código y su QR, **sin trámites
-> enredados** y sin salir del sistema. Le vendes a quien sea, con tranquilidad,
-> y duermes bien."
-
-▶ (avanza)
-
-### 11. *Te ayudamos a captar más clientes*
+### 9. *Te ayudamos a captar más clientes*
 > "Y no solo les ayudamos a ordenar el negocio: les ayudamos a **conseguir más
 > clientes**, de tres formas. **Uno, el catálogo virtual:** tu tienda en internet
 > con un enlace propio; el cliente arma su pedido y te llega directo al WhatsApp,
@@ -132,6 +110,27 @@ conocimientos técnicos).
 > Ksmart360 aparecen juntas, cada una con su tienda, y una persona puede entrar,
 > mirar productos y pedir en cualquiera… **incluso combinando varias tiendas**.
 > Le damos **visibilidad** a tu negocio."
+
+▶ (avanza)
+
+### 10. *Todo tu negocio, en un solo lugar*
+> "Y todo esto queda organizado en un solo lugar: ventas, inventario, clientes y
+> cobros, y tus reportes. Tu inventario se cuadra solo y te avisa cuando algo se
+> está agotando; ves cuánto vendiste y cuánto ganaste en el día. Todo lo que hoy
+> hacen en cuadernos, en Excel, o en la cabeza… aquí queda **ordenado**."
+
+*(No leas la lista completa. Señala 2–3 cosas y sigue.)*
+
+▶ (avanza)
+
+### 11. *La factura electrónica ya no es tu problema* (DIAN)
+> "Y hablemos de algo que a muchos les quita el sueño: **la DIAN**. Miren la
+> izquierda: vender sin factura electrónica **te cuesta caro** — multas, y te
+> cierra puertas: no le puedes vender a empresas ni al Estado, no accedes a
+> créditos. *(pausa)* Ahora la derecha: con **Ksmart360 eso está resuelto**.
+> Emites facturas **100% legales**, con su código y su QR, **sin trámites
+> enredados** y sin salir del sistema. Le vendes a quien sea, con tranquilidad,
+> y duermes bien."
 
 ▶ (avanza)
 
@@ -146,9 +145,8 @@ conocimientos técnicos).
 
 ### 13. *Tus datos, seguros y protegidos*
 > "Y su información está **protegida**. Los datos de tu negocio son **solo tuyos**,
-> nadie más los ve. Entras con tu huella. Tú decides qué ve cada empleado. Y todo
-> viaja cifrado, igual que en la banca en línea. Con la misma seriedad de un
-> banco."
+> nadie más los ve. Todo viaja cifrado, igual que en la banca en línea. Con la
+> misma seriedad de un banco."
 
 ▶ (avanza)
 
@@ -161,11 +159,14 @@ conocimientos técnicos).
 
 ▶ (avanza)
 
-### 15. *Operando el mismo día*
-> "Y empezar es facilísimo. **Uno:** te registras en 2 minutos y eliges tu tipo de
-> negocio. **Dos:** cargas tus productos escaneándolos con el celular. **Tres:**
-> empiezas a vender **el mismo día**. Con soporte incluido. No hay que esperar
-> semanas ni pagar instalaciones."
+### 15. *Delega con confianza* (roles / administración)
+> "Y algo clave para el que tiene empleados: **no tienes que estar en todo**. Con
+> Ksmart360 tú decides qué puede ver y hacer cada persona de tu equipo. Creas
+> **roles por funciones**: uno solo vende, otro maneja el inventario, otro la
+> caja — cada quien entra únicamente a lo suyo. ¿Tienes un empleado temporal? Le
+> das acceso **con fecha de vencimiento** y el sistema lo desactiva solo cuando
+> llega el día. Tú siempre al mando, delegando con **confianza** y con tu
+> información protegida."
 
 ▶ (avanza)
 
@@ -193,14 +194,14 @@ Aprende **solo estas frases ancla**; el resto sale solo:
 5. **Necesitas:** "Ver tus números, tu inventario, cumplir la DIAN, y que sea fácil."
 6. **Reveal:** "Esa herramienta existe: **Ksmart360**. Ya la usan +30 negocios."
 7. **5 negocios:** "Se adapta a **tu** negocio."
-8. **Detalles:** "Escaneas y listo. Entras con tu huella. Contabilidad sola."
-9. **Todo junto:** "Todo en **un solo lugar**, ordenado."
-10. **DIAN:** "Vender sin factura te cierra puertas. Con Ksmart360, **resuelto**."
-11. **Más clientes:** "Catálogo, agendamiento y centro comercial. Te damos **visibilidad**."
+8. **Detalles:** "Ventas ágiles con varios métodos de pago. Huella. Contabilidad sola."
+9. **Más clientes:** "Catálogo, agendamiento y centro comercial. Te damos **visibilidad**."
+10. **Todo junto:** "Todo en **un solo lugar**, ordenado."
+11. **DIAN:** "Vender sin factura te cierra puertas. Con Ksmart360, **resuelto**."
 12. **Tecnología:** "Tú vendes; de la tecnología **nos encargamos nosotros**."
 13. **Seguridad:** "Tus datos son **solo tuyos**."
 14. **Precio:** "Desde $29.900. Pruébalo **gratis**."
-15. **Empezar:** "Operando **el mismo día**."
+15. **Delega:** "No tienes que estar en todo. **Roles por funciones**, delega con confianza."
 16. **Cierre:** "Dejemos de trabajar a ciegas. **Escaneen el QR** y empiecen hoy."
 
 ---
@@ -212,7 +213,7 @@ Aprende **solo estas frases ancla**; el resto sale solo:
 - **Cuenta una historia real:** si conoces el caso de un tendero de Cali al que
   Ksmart360 le cambió el negocio, cuéntalo entre la diapositiva 6 y la 8. Vende
   más una historia que diez funciones.
-- **No leas las listas** de las diapositivas densas (9). Señala 2–3 cosas.
+- **No leas las listas** de las diapositivas densas. Señala 2–3 cosas.
 - **El QR es tu mejor aliado:** recuérdalo al inicio y déjalo fijo al final. Es
   lo que convierte "me gustó" en "lo voy a probar".
 - **El cierre es lo que más recuerdan.** Termina con energía y con una acción

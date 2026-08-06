@@ -9,7 +9,7 @@ import {
   TechSlide,
   SecuritySlide,
   PlansSlide,
-  StepsSlide,
+  RolesSlide,
   CloseSlide,
 } from "@/components/deck/slides";
 import {
@@ -33,13 +33,13 @@ export default function Home() {
     <RevealSolutionSlide key="reveal" />,
     <BusinessTypesSlide key="types" />,
     <DifferentiatorsSlide key="diff" />,
+    <CatalogSlide key="catalog" />,
     <CapabilitiesSlide key="caps" />,
     <DianSlide key="dian" />,
-    <CatalogSlide key="catalog" />,
     <TechSlide key="tech" />,
     <SecuritySlide key="security" />,
     <PlansSlide key="plans" />,
-    <StepsSlide key="steps" />,
+    <RolesSlide key="roles" />,
     <CloseSlide key="close" />,
   ];
 
