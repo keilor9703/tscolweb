@@ -81,7 +81,7 @@ export function TitleSlide() {
         >
           <div className="rounded-[2rem] bg-white p-6 shadow-[0_30px_80px_-20px_hsl(var(--brand)/0.5)]">
             <img
-              src="/screens/qr.jpg"
+              src="/screens/qr-portada.jpg"
               alt="Código QR para abrir Ksmart360"
               className="h-64 w-64 rounded-xl sm:h-72 sm:w-72 lg:h-80 lg:w-80"
             />
